@@ -1,0 +1,557 @@
+/*
+Rørosvinduet.no redesign
+
+red: #a02226; darkred: #820011;
+blue: #485473;
+
+background beige: #f9f8f6;
+
+
+
+ */
+ 
+ 
+ body {
+ 	font-family: Georgia, Times, "Times New Roman", serif;
+ 	background: #f9f8f6;
+
+	 
+ }
+ 
+h1, h2, h3, h4, h5, h6, ul.nav li, .bigLink, .tabP, aside {
+	font-family: "Ropa Sans", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+}
+
+ .row a, .row a:visited {
+	 color: #a02226;
+ }
+ 
+  .row a:hover,  .row a:active {
+	 color: #820011;
+ }
+ 
+ .nopad {
+	 padding: 0;
+ }
+ .lessmarg {
+	 margin: 15px 0 30px 0;
+ }
+ 
+  /* -- Elements -- */
+ .stichline {
+	 border-top: 1px dashed DarkGrey;
+	 height: 1px;
+	 margin-top: 5px;
+ }
+ .bigLink {
+	 padding: 0 1px 4px 1px;
+ }
+ .bigLink:hover {
+	 border-bottom: 1px dashed #820011;
+	 text-decoration: none;
+ }
+ .ingress {
+	 font-style: italic;
+	 font-size: 1.7em;
+	 line-height: 1.4em;
+	 color: #485473;
+	 margin: 10px 0 35px 0;
+ }
+ 
+ blockquote {
+	 border: none;
+	 background: #e1dcd2;
+	 -webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	font-style: italic;
+	font-size: 1.2em;
+	line-height: 1.5em;
+	text-shadow: 0 1px 0 white;
+	padding: 20px 28px;
+	margin: 40px 0;
+ }
+ 
+
+ 
+ 
+ /* -- Menu -- */
+ 
+ .navbar-default {
+	background: url('/img/bgSmall.png') #fff; 
+	top: 15px;
+	-webkit-box-shadow: 0px 3px 20px rgba(50, 50, 50, 0.10);
+	 -moz-box-shadow:    0px 3px 20px rgba(50, 50, 50, 0.10);
+	 box-shadow:         0px 3px 20px rgba(50, 50, 50, 0.10);
+	
+ }
+ 
+ 
+ .logoLine {
+ 	position: fixed;
+ 	top: 0;
+ 	z-index: 4444;
+	 height: 15px;
+	 background: #fff;
+	 width: 100%;
+	 -webkit-box-shadow: 0px 3px 5px rgba(50, 50, 50, 0.15);
+	 -moz-box-shadow:    0px 3px 5px rgba(50, 50, 50, 0.15);
+	 box-shadow:         0px 3px 5px rgba(50, 50, 50, 0.15);
+ }
+
+ 
+
+ 
+.navInner {
+	position: relative;
+	padding: 2px 0 0 200px;
+}
+ .brand {
+ 	position: absolute;
+	 top: 15px;
+	 margin-left: -70px;
+ }
+ ul.nav li a {
+	 color: black;
+	 font-size: 1.1em;
+ }
+ .nav .caret{
+	 border-top-color: #a02226;
+	 border-bottom-color: #a02226;
+ }
+  .nav a:hover .caret {
+	  border-top-color: #a02226;
+	 border-bottom-color: #a02226;
+  }
+ 
+ .nav > li > a:hover, .nav > li > a:focus {
+	 background: none;
+	 color: #a02226;
+ }
+ 
+ .navbar-collapse .stichline {
+	 padding-bottom: 5px;
+	 margin: 0 -20px;
+ }
+ .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+	 background: none; 
+	 border: none;
+ }
+ 
+ .dropdown-menu {
+	 margin: 2px 0 0 -80px;
+	 left: 50%;
+ }
+ 
+ .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+	 background: #820011;
+ }
+ 
+ .brand2 {
+	 display: none;
+ }
+ 
+ 
+  /* -- Carousel-row -- */
+ #myCarousel {
+	 margin: 65px 0 0 0;
+ }
+ 
+ .carousel img {
+	 min-width: 100%;
+	 max-width: 100%;
+ }
+ .carousel-caption {
+	 font-size: 1.2em;
+	 text-shadow: 0 2px 7px #000;
+ }
+ .carousel-indicators li {
+	 box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
+ }
+
+ 
+ /* -- Thumbnails-row -- */
+  
+ .thumbRow {
+	 background: url('/img/bgSmall.png');
+	 padding: 0 0 20px 0;
+ }
+ 
+  .thumbRow .stichline {
+	  margin-top: 5px;
+	 padding-bottom: 75px;
+ }
+ 
+ .thumbnail {
+	 text-align: center;
+	 background: none;
+	 border: none;
+ }
+ 
+ .stichCircle {
+	 border: 1px dashed DarkGrey;
+	 border-radius: 115px;
+	 display: inline-block;
+ }
+ 
+ .thumbnail img {
+	 background-color: LightGray;
+	  border-radius: 110px;
+	  margin: 5px;
+	  height: 220px;
+	  width: 220px;
+	  display: block;
+ }
+ 
+ 
+ /* -- Tab-row -- */ 
+ 
+ .tabContainer {
+	 background: url('/img/bgSmallDark.png');
+	 border-top: 1px dashed DarkGrey;
+	 border-bottom: 1px solid DarkGrey;
+ }
+ 
+ .tabRow {
+	 background: #c3c3c2; /* Old browsers */
+	background: -moz-linear-gradient(top, #c3c3c2 0%, #afada9 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c3c3c2), color-stop(100%,#afada9)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #c3c3c2 0%,#afada9 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #c3c3c2 0%,#afada9 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #c3c3c2 0%,#afada9 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #c3c3c2 0%,#afada9 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c3c3c2', endColorstr='#afada9',GradientType=0 ); /* IE6-8 */
+
+	 min-height: 300px;
+	 
+ }
+ 
+ 
+ .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus,  .nav-tabs.nav-justified > li > a {
+	 
+	 background: none;
+	 border: none;
+	 
+ }
+ .nav-tabs > li.active > a:after {
+	 display: inline-block;
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-top: 10px solid #000;
+	border-right: 10px solid rgba(0, 0, 0, 0);
+	border-left: 10px solid rgba(0, 0, 0, 0);
+	content: "";
+	opacity: 0.5;
+	left: 50%;
+	margin-left: -5px;
+	top: 41px;
+ }
+ 
+ .nav-tabs.nav-justified > li > a:hover {
+	 color: #820011;
+	 text-decoration: none;
+ }
+ 
+ 
+ 
+ .tab-content {
+	 padding: 0 15px;
+ }
+ 
+ .tabP {
+	 font-size: 1.3em;
+ }
+ 
+.tab-content img {
+	
+}
+ 
+   /* -- Content -- */
+   
+   .contentContainer {
+	   margin: 50px auto 100px auto;
+	   }
+   
+   
+   .content h5 {
+	   color: DarkGrey;
+	   padding: 0 0 20px 0;
+   }
+   
+   .row .content h5 a {
+	   color: DarkGray;
+   }
+  
+   
+   aside ul {
+	   margin: 65px 0 110px 0;
+	   padding: 0 0 60px 30px;
+	   list-style: none;
+	   border-left: 1px dashed DarkGrey;
+   }
+   
+   aside ul li {
+	   padding: 0.5em 0;
+   }
+   
+   .row aside .activeAside {
+	   color: black;
+   }
+   
+   aside ul li:first-child {
+	   font-size: 1.8em;
+	   padding: 0 0 10px 0;
+   }
+   
+   .content img {
+	   padding: 0;
+	   margin: 10px 0 0;
+   }
+   .placeholderImg {
+	   height: 300px;
+	   width: 100%;
+	   background: DarkGray;
+   }
+   .captionText {
+	   font-size: 0.8em;
+	   color: DarkGray;
+	   font-style: italic;
+	   padding: 10px 0;
+	  
+   }
+   
+   
+   /* -- Contact --*/
+   
+   .contact {
+	   margin: 30px 0 0 0;
+   }
+   .contact .row {
+	   margin: 0;
+   }
+   
+   .content iframe {
+	   width: 100%;
+	   height: 400px;
+   }
+   
+   .contact .glyphicon, .person .glyphicon {
+	   margin-right: 10px;
+	   font-size: 0.8em;
+   }
+   
+   .contact .stichline {
+	   margin: 20px 0 0 0;
+   }
+   
+   .person {
+	   min-height: 180px;
+   }
+   .person, .person div {
+	   padding: 0;
+   }
+   .person p {
+	   line-height: 1.5em;
+   }
+   
+   
+   .person .ital {
+	   font-size: 0.8em;
+	   font-style: italic;
+	   margin:  0 0 0;
+   }
+   .person img {
+	   background: #444;
+	   width: 100%;
+	   max-width: 100px;
+	   height: auto;
+	   
+   }
+   .person .name {
+	   margin: 15px 0 0 0;
+	   font-weight: bold;
+   }
+   
+   .contact .pushtop {
+	 margin: 50px 0 0 0;
+ }
+ 
+ .contact blockquote {
+	 margin: 20px 0;
+	 padding-bottom: 27px;
+	 padding-right: 29px;
+	 display: inline-block;
+ }
+ 
+ .contact blockquote p {
+	 font-style: normal;
+	 font-size: 0.9em; 
+	 line-height: 1.6em;
+ }
+ 
+ 
+ /* -- Product -- */
+ 
+ .products {
+	 text-align: center;
+	 margin: 0 0 20px 0;
+ }
+ .products p {
+	 margin: 10px 0;
+ }
+ 
+ 
+ aside ul ul {
+	 margin: 0;
+	 padding: 0 0 10px 20px;
+	 font-style: italic;
+ }
+ 
+ aside ul ul li, aside ul ul li:first-child {
+	 padding: 2px 0;
+ }
+ 
+ aside ul ul li:first-child {
+ font-size: 1em;
+ }
+ 
+ 
+  /* -- Footer -- */
+ 
+ footer {
+	 background: url('/img/blackLinen.png');
+	 padding: 45px 0 100px 0;
+	 font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	 font-size: 0.9em;
+	 -moz-box-shadow:    inset 0 5px 20px #212121;
+	   -webkit-box-shadow: inset 0 5px 20px #212121;
+	   box-shadow:         inset 0 5px 20px #212121;
+ }
+ 
+ 
+footer ul {
+	color: white;
+	list-style: none;
+	padding: 0;
+}
+footer ul li {
+	margin: 0 0 10px 0;
+}
+footer ul li a, footer p a {
+	color: #ffffff;
+	text-transform: uppercase;
+	padding: 0 0 3px 0;
+	border-bottom: 1px dashed white;
+}
+
+footer ul li a:hover, footer p a:hover {
+	color: #bfbfbf;
+	text-decoration: none;
+	border-color: #bfbfbf;
+}
+footer ul li a.mail {
+	text-transform: lowercase;
+}
+
+.whiteline {
+	 border-color: #ffffff;
+	 margin: 40px 0;
+ }
+
+.copyright {
+	font-size: 0.8em;
+	text-align: center;
+	color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -- Responsive fixes ----------------------------------------------------- */
+
+@media (max-width: 980px) { 
+	.thumbnail .stichCircle {
+		float: left;
+		width: 33%;
+		padding: 5px;
+	}
+	
+	.thumbnail .circle img {
+		width: 100%;
+		height: 100%;
+		margin: 0;
+	}
+	.thumbnail {
+		float: left;
+		margin: 0 0 20px 0;
+	}
+	.thumbnail .caption {
+		float: right;
+		width: 66%;
+		text-align: left;
+		padding: 0 10px 0 40px;
+	}
+	
+	.contact .col-md-4, .contact .col-md-8 {
+		float: left;
+		margin: 0 20px 0 0;
+	}
+	.contact .stichline {
+		margin: 0;
+	}
+	
+	
+}
+
+
+@media (max-width: 767px) { 
+	
+	.navInner {
+	padding-left: 0; }
+
+	
+	.open > .dropdown-menu {
+		position: relative;
+		float: none;
+		text-align: center;
+		left: 0;
+		margin: 0;
+		
+	}
+	.open > .dropdown-menu > li  {
+		padding: 5px 0;
+	}
+	.nav-tabs > li.active > a:after {
+		border: none;
+	}
+	
+	.brand {
+		margin-left: -20px;
+	}
+	
+	.brand img {
+		width: 75%;
+	}
+	
+	.thumbnail .caption {
+		padding: 0 5px 0 20px;
+		margin-top: -10px;
+	}
+
+}
+
+
