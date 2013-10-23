@@ -1,7 +1,7 @@
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 		  <!-- Brand and toggle get grouped for better mobile display -->
 		  <div class="navbar-header">
-		  <a href="#" class="brand2"><img src="{{ site.url }}img/logo2.png" /></a>
+		  <a href="#" class="brand2"><img src="{{ site.baseurl }}/img/logo2.png" /></a>
 		    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
 		      <span class="sr-only">Toggle navigation</span>
 		      <span class="icon-bar"></span>

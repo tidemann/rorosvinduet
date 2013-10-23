@@ -37,9 +37,9 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="//code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="{{ site.url }}js/bootstrap.min.js"></script>
-	<script src="{{ site.url }}js/flowtype.js"></script>
-    <script src="{{ site.url }}js/admin.js"></script>
+    <script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
+	<script src="{{ site.baseurl }}/js/flowtype.js"></script>
+    <script src="{{ site.baseurl }}/js/admin.js"></script>
     
     	  
    

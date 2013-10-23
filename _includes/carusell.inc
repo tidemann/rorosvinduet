@@ -7,7 +7,7 @@
 	      </ol>
 	      <div class="carousel-inner">
 	        <div class="item active">
-	          <img src="{{ site.url }}img/VinterRoros.jpg" alt="First slide">
+	          <img src="{{ site.baseurl }}/img/VinterRoros.jpg" alt="First slide">
 	          <div class="container">
 	            <div class="carousel-caption">
 	              <h1>Skapt for et langt og hardt liv.</h1>
@@ -15,7 +15,7 @@
 	          </div>
 	        </div>
 	        <div class="item">
-	          <img src="{{ site.url }}img/hytte.jpg" alt="Second slide">
+	          <img src="{{ site.baseurl }}/img/hytte.jpg" alt="Second slide">
 	          <div class="container">
 	            <div class="carousel-caption">
 	              <h1>Another example headline.</h1>
