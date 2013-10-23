@@ -148,9 +148,11 @@ h1, h2, h3, h4, h5, h6, ul.nav li, .bigLink, .tabP, aside {
 	 background: #820011;
  }
  
- .brand2 {
-	 display: none;
- }
+.navbar-default .navbar-toggle {
+	background: #ffffff;
+}
+ 
+ 
  
  
   /* -- Carousel-row -- */
@@ -373,9 +375,8 @@ column-gap:80px;
    }
    .person img {
 	   background: #444;
-	   width: 100%;
-	   max-width: 100px;
-	   height: auto;
+	   width: 100px;
+	   height: 130px;
 	   
    }
    .person .name {
@@ -391,7 +392,6 @@ column-gap:80px;
 	 margin: 20px 0;
 	 padding-bottom: 27px;
 	 padding-right: 29px;
-	 display: inline-block;
  }
  
  .contact blockquote p {
