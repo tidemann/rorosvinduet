@@ -1,3 +1,8 @@
-name: Your New Jekyll Site
-markdown: redcarpet
-pygments: true
+pygments:     true
+permalinks: pretty
+relative_permalinks: false
+
+
+# If running locally, simply comment out the line below to make all urls relative
+
+#url:          http://docs.ghost.org
