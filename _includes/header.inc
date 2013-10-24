@@ -6,6 +6,7 @@
     <meta charset="utf-8"> 
     <!-- Bootstrap -->
     <link href="{{ site.baseurl }}/css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     
     <!-- Custom styling -->
     <link href='http://fonts.googleapis.com/css?family=Ropa+Sans' rel='stylesheet' type='text/css'>

@@ -1,4 +1,4 @@
-  <div id="myCarousel" class="carousel slide karrusell">
+  <div id="myCarousel" class="carousel slide">
 	      <div class="carousel-inner">
 	        <div class="item active">
 	          <img src="{{ site.baseurl }}/img/VinterRoros.jpg" alt="First slide">
@@ -17,7 +17,7 @@
 	          </div>
 	        </div>
 	        <div class="item">
-	          <img src="{{ site.baseurl }}/img/kids.jpg" alt="Third slide">
+	          <img src="{{ site.url }}/img/kids.jpg" alt="Third slide">
 	          <div class="container">
 	            <div class="carousel-caption">
 	              <h1>One more for good measure.</h1>

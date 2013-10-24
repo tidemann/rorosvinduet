@@ -11,6 +11,7 @@ background beige: #f9f8f6;
  */
  
  
+
  body {
  	font-family: Georgia, Times, "Times New Roman", serif;
  	background: #f9f8f6;
@@ -23,11 +24,11 @@ h1, h2, h3, h4, h5, h6, ul.nav li, .bigLink, .tabP, aside {
 	text-transform: uppercase;
 }
 
- .row a, .row a:visited {
+a,  a:visited {
 	 color: #a02226;
  }
  
-  .row a:hover,  .row a:active {
+  a:hover, a:active {
 	 color: #820011;
  }
  
@@ -38,6 +39,8 @@ h1, h2, h3, h4, h5, h6, ul.nav li, .bigLink, .tabP, aside {
 	 margin: 15px 0 30px 0;
  }
  
+ .row {
+ }
   /* -- Elements -- */
  .stichline {
 	 border-top: 1px dashed DarkGrey;
@@ -79,8 +82,7 @@ h1, h2, h3, h4, h5, h6, ul.nav li, .bigLink, .tabP, aside {
  /* -- Menu -- */
  
  .navbar-default {
-	background: url('/img/bgSmall.png') #fff; 
-	top: 15px;
+	background:  #fff; 
 	-webkit-box-shadow: 0px 3px 20px rgba(50, 50, 50, 0.10);
 	 -moz-box-shadow:    0px 3px 20px rgba(50, 50, 50, 0.10);
 	 box-shadow:         0px 3px 20px rgba(50, 50, 50, 0.10);
@@ -101,15 +103,17 @@ h1, h2, h3, h4, h5, h6, ul.nav li, .bigLink, .tabP, aside {
  }
 
  
-
+.navWrap {
+	height: 49px;
+}
  
 .navInner {
 	position: relative;
-	padding: 2px 0 0 200px;
+	padding: 2px 0 0 0px;
 }
  .brand {
  	position: absolute;
-	 top: 15px;
+	 top: 14px;
 	 margin-left: -70px;
  }
  ul.nav li a {
@@ -148,34 +152,40 @@ h1, h2, h3, h4, h5, h6, ul.nav li, .bigLink, .tabP, aside {
 	 background: #820011;
  }
  
- .brand2 {
-	 display: none;
+.navbar-default .navbar-toggle {
+	background: #ffffff;
+}
+
+ .affix {
+	 position: fixed;
+	 top: 15px;
+	 width: 100%;
  }
+ 
+ 
+ 
  
  
   /* -- Carousel-row -- */
  #myCarousel {
-	 margin: 65px 0 0 0;
+	 margin: 0 0 0 0;
  }
  
  .carousel img {
 	 min-width: 100%;
 	 max-width: 100%;
  }
- .carousel-caption {
-	 font-size: 1.2em;
+ .carousel-caption h1 {
+	 font-size: 3.5em;
 	 text-shadow: 0 2px 7px #000;
  }
- .carousel-indicators li {
-	 box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
- }
 
- 
+
  /* -- Thumbnails-row -- */
   
  .thumbRow {
 	 background: url('/img/bgSmall.png');
-	 padding: 0 0 20px 0;
+	 padding: 50px 0 20px 0;
  }
  
   .thumbRow .stichline {
@@ -346,8 +356,11 @@ h1, h2, h3, h4, h5, h6, ul.nav li, .bigLink, .tabP, aside {
 	   height: 400px;
    }
    
+   .contact blockquote {
+	   padding: 5px;
+   }
    .contact .glyphicon, .person .glyphicon {
-	   margin-right: 10px;
+	   margin-right: 8px;
 	   font-size: 0.8em;
    }
    
@@ -357,6 +370,9 @@ h1, h2, h3, h4, h5, h6, ul.nav li, .bigLink, .tabP, aside {
    
    .person {
 	   min-height: 180px;
+   }
+   .contactInfo .person {
+	   min-height: 120px;;
    }
    .person, .person div {
 	   padding: 0;
@@ -373,9 +389,8 @@ h1, h2, h3, h4, h5, h6, ul.nav li, .bigLink, .tabP, aside {
    }
    .person img {
 	   background: #444;
-	   width: 100%;
-	   max-width: 100px;
-	   height: auto;
+	   width: 100px;
+	   height: 130px;
 	   
    }
    .person .name {
@@ -386,12 +401,14 @@ h1, h2, h3, h4, h5, h6, ul.nav li, .bigLink, .tabP, aside {
    .contact .pushtop {
 	 margin: 50px 0 0 0;
  }
+ .contact .pushbottom {
+	 margin: 10px 0 20px 0;
+ }
  
  .contact blockquote {
 	 margin: 20px 0;
 	 padding-bottom: 27px;
 	 padding-right: 29px;
-	 display: inline-block;
  }
  
  .contact blockquote p {
@@ -434,9 +451,9 @@ h1, h2, h3, h4, h5, h6, ul.nav li, .bigLink, .tabP, aside {
 	 padding: 45px 0 100px 0;
 	 font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	 font-size: 0.9em;
-	 -moz-box-shadow:    inset 0 5px 20px #212121;
-	   -webkit-box-shadow: inset 0 5px 20px #212121;
-	   box-shadow:         inset 0 5px 20px #212121;
+	 -moz-box-shadow:    inset 0 5px 20px #323232;
+	   -webkit-box-shadow: inset 0 5px 20px #323232;
+	   box-shadow:         inset 0 5px 20px #323232;
  }
  
  
@@ -448,7 +465,7 @@ footer ul {
 footer ul li {
 	margin: 0 0 10px 0;
 }
-footer ul li a, footer p a {
+footer a, footer a:visited{
 	color: #ffffff;
 	text-transform: uppercase;
 	padding: 0 0 3px 0;
@@ -522,7 +539,12 @@ footer ul li a.mail {
 	.contact .stichline {
 		margin: 0;
 	}
-	
+	.contact h4 {
+		
+	}
+	.carousel-caption h1 {
+		font-size: 2.8em;
+	}
 	
 }
 
@@ -553,12 +575,16 @@ footer ul li a.mail {
 	}
 	
 	.brand img {
-		width: 75%;
+		width: 65%;
 	}
 	
 	.thumbnail .caption {
 		padding: 0 5px 0 20px;
 		margin-top: -10px;
+	}
+	
+	.carousel-caption {
+		display: none;
 	}
 
 }
