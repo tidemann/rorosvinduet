@@ -322,12 +322,12 @@ h1, h2, h3, h4, h5, h6, ul.nav li, .bigLink, .tabP, aside {
 	  
    }
    .txtcolumns {
--moz-column-count:2; /* Firefox */
--webkit-column-count:2; /* Safari and Chrome */
-column-count:2;
--moz-column-gap:80px; /* Firefox */
--webkit-column-gap:80px; /* Safari and Chrome */
-column-gap:80px;
+	-moz-column-count:2; /* Firefox */
+	-webkit-column-count:2; /* Safari and Chrome */
+	column-count:2;
+	-moz-column-gap:80px; /* Firefox */
+	-webkit-column-gap:80px; /* Safari and Chrome */
+	column-gap:80px;
    	
 	   	
    }
