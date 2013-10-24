@@ -1,4 +1,4 @@
-  <div id="myCarousel" class="carousel slide karrusell">
+  <div id="myCarousel" class="carousel slide">
 	      <div class="carousel-inner">
 	        <div class="item active">
 	          <img src="{{ site.baseurl }}/img/VinterRoros.jpg" alt="First slide">
