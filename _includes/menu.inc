@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+<div class="navWrap"><nav id="Nav" class="navbar navbar-default affix-top" role="navigation">
 		  <!-- Brand and toggle get grouped for better mobile display -->
 		  <div class="navbar-header">
 		    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -14,6 +14,9 @@
 		    <div class="container navInner">
 		    
 		    <ul class="nav nav-justified mainNav">
+		    
+		    <li><a href="{{ site.baseurl }}/">Forsiden</a></li>
+		    
 		      <li class="dropdown">
 		        <a href="/vinduer" class="dropdown-toggle" data-toggle="dropdown">Vinduer <b class="caret"></b></a>
 		        <ul class="dropdown-menu">
@@ -56,4 +59,4 @@
 		  </div><!-- /.navbar-collapse -->
 		</nav>
 		</div><!-- container end -->
-		
+</div>
