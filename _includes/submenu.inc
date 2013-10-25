@@ -22,19 +22,7 @@
 					</ul>
 				</aside>
 {% endif %}
-{% if page.title == 'om-oss' %}
-				<aside class="col-sm-12 col-md-3">
-					<ul>
-						<li><a href="#">Kundeservice</a></li>
-						<li><a href="#" class="activeAside">Kontaktinfo / ordrekontor og service</a></li>
-						<li><a href="#">Reklamasjoner / Natre skjema</a></li>
-						<li><a href="#">Ofte stilte spørsmål / servicehåndbok</a></li>
-						<li><a href="#">Salgs- og leveringsbetingelser</a></li>
-					</ul>
-				</aside>
-{% endif %}
-{% if page.title == 'Kundeservice - Kontakt' %}
-
+{% if page.title == 'Historien' %}
 				<aside class="col-sm-12 col-md-3">
 					<ul>
 						<li><a href="#">Om oss</a></li>
@@ -42,6 +30,18 @@
 						<li><a href="#">Salg og produksjon</a></li>
 						<li><a href="#">Ledige stillinger</a></li>
 						<li><a href="#">Røros miljø og kvalitet</a></li>
+					</ul>
+				</aside>
+{% endif %}
+{% if page.title == 'Kundeservice - Kontakt' %}
+
+				<aside class="col-sm-12 col-md-3">
+					<ul>
+						<li><a href="#">Kundeservice</a></li>
+						<li><a href="#" class="activeAside">Kontaktinfo/ordrekontor og service</a></li>
+						<li><a href="#">Reklamasjoner/Serviceskjema</a></li>
+						<li><a href="#">Ofte stilte spørsmål/servicehåndbok</a></li>
+						<li><a href="#">Salg og leveringsbetingelser</a></li>
 					</ul>
 				</aside>
 				
