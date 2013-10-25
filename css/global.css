@@ -204,7 +204,7 @@ a,  a:visited {
  /* -- Thumbnails-row -- */
   
  .thumbRow {
-	 background: url('/img/bgSmall.png');
+	 background: url('../img/bgSmall.png');
 	 padding: 50px 0 20px 0;
  }
  
@@ -238,7 +238,7 @@ a,  a:visited {
  /* -- Tab-row -- */ 
  
  .tabContainer {
-	 background: url('/img/bgSmallDark.png');
+	 background: url('../img/bgSmallDark.png');
 	 border-top: 1px dashed DarkGrey;
 	 border-bottom: 1px solid DarkGrey;
  }
@@ -449,7 +449,7 @@ a,  a:visited {
  }
  
 ul.checkmark li {
-    background:url("img/checkmark.png") no-repeat 0 50%;
+    background:url("../img/checkmark.png") no-repeat 0 50%;
     padding-left: 30px;
 }
 
@@ -552,7 +552,7 @@ ul.checkmark {
   /* -- Footer -- */
  
  footer {
-	 background: url('img/blackLinen.png');
+	 background: url('../img/blackLinen.png');
 	 padding: 45px 0 100px 0;
 	 font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	 font-size: 0.9em;
