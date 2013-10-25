@@ -80,7 +80,9 @@ a,  a:visited {
 	margin: 40px 0;
  }
  
-
+.contentImg {
+	width: 100%;
+}
  
  
  /* -- Menu -- */
@@ -188,6 +190,14 @@ a,  a:visited {
 	 text-shadow: 0 2px 7px #000;
  }
 
+
+.karrusell {
+	height: 200px;
+	overflow: hidden;
+}
+.karrusell .container {
+	display: none;
+}
 
  /* -- Thumbnails-row -- */
   
@@ -693,6 +703,9 @@ footer ul li a.mail {
 	
 	.carousel-caption {
 		display: none;
+	}
+	.karrusell {
+		height: 140px;
 	}
 
 }
