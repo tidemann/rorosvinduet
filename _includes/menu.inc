@@ -48,7 +48,7 @@
 		        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Kundeservice <b class="caret"></b></a>
 		        <ul class="dropdown-menu">
 		          <li><a href="{{ site.baseurl }}/kundeservice/kontakt">Kontaktinfo/ordrekontor og service</a></li>
-		          <li><a href="#">Reklamasjoner/Natre skjema</a></li>
+		          <li><a href="{{ site.baseurl }}/kundeservice/reklamasjoner">Reklamasjoner/Natre skjema</a></li>
 		          <li><a href="#">Ofte stilte spørsmål/servicehåndbok</a></li>
 		          <li><a href="#">Salgs- og leveringsbetingelser</a></li>
 		        </ul>
