@@ -108,6 +108,7 @@ a,  a:visited {
  
 .navWrap {
 	height: 49px;
+	overflow: hidden;
 }
  
 .navInner {
