@@ -97,6 +97,7 @@ a,  a:visited {
  }
  .navbar-collapse {
 	 max-height: none;
+	 padding: 0;
  }
 
  

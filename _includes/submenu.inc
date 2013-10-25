@@ -25,7 +25,7 @@
 {% if page.title == 'Historien' %}
 				<aside class="col-sm-12 col-md-3">
 					<ul>
-						<li><a href="#">Om oss</a></li>
+						<li>Om oss</li>
 						<li><a href="{{ site.baseurl }}/om-oss/historien" class="activeAside">Historien</a></li>
 						<li><a href="#">Salg og produksjon</a></li>
 						<li><a href="#">Ledige stillinger</a></li>
@@ -37,7 +37,7 @@
 
 				<aside class="col-sm-12 col-md-3">
 					<ul>
-						<li><a href="#">Kundeservice</a></li>
+						<li>Kundeservice</li>
 						<li><a href="{{ site.baseurl }}/kundeservice/kontakt" class="activeAside">Kontaktinfo/ordrekontor og service</a></li>
 						<li><a href="{{ site.baseurl }}/kundeservice/reklamasjoner">Reklamasjoner/Serviceskjema</a></li>
 						<li><a href="#">Ofte stilte spørsmål/servicehåndbok</a></li>
@@ -50,7 +50,7 @@
 
 				<aside class="col-sm-12 col-md-3">
 					<ul>
-						<li><a href="#">Kundeservice</a></li>
+						<li>Kundeservice</li>
 						<li><a href="{{ site.baseurl }}/kundeservice/kontakt">Kontaktinfo/ordrekontor og service</a></li>
 						<li><a href="{{ site.baseurl }}/kundeservice/reklamasjoner" class="activeAside">Reklamasjoner/Serviceskjema</a></li>
 						<li><a href="#">Ofte stilte spørsmål/servicehåndbok</a></li>
