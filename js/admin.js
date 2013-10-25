@@ -8,7 +8,7 @@ $(document).ready(function() {
 
 	$('.content').flowtype({
 	 minimum   : 500,
-	 maximum   : 1200,
+	 maximum   : 855,
 	 minFont   : 12,
 	 maxFont   : 20,
 	 fontRatio : 40,
