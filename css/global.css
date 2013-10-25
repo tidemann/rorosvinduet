@@ -235,9 +235,9 @@ a,  a:visited {
 	  width: 100%;
 	   max-width: 460px
   }
- .tab-content img.centered {
+ .tab-content img.righted {
 	 max-width: 380px;
-	display: block;
+	float: right;
  }
  
  .tabRow {
@@ -637,7 +637,9 @@ footer ul li a.mail {
 	.carousel-caption h1 {
 		font-size: 2.8em;
 	}
-	
+	 .tab-content img.righted {
+		 float: none;
+	 }
 }
 
 
