@@ -3,15 +3,16 @@
 			<div class="col-sm-6 col-md-4">
 				<ul>
 					<li><h4>Vinduer</h4></li>
-					<li><a href="#">Lala</a></li>
-					<li><a href="#">Lolo</a></li>
+					<li><a href="#">Røros Original Koblet</a></li>
+					<li><a href="#">Røros Vinduet Isoler</a></li>
 				</ul>
 			</div>
 			<div class="col-sm-6 col-md-4">
 				<ul>
 					<li><h4>Dører</h4></li>
-					<li><a href="#">Lala</a></li>
-					<li><a href="#">Lolo</a></li>
+					<li><a href="#">Speildører</a></li>
+					<li><a href="#">Paneldører</a></li>
+					<li><a href="#">Terrassedører</a></li>
 				</ul>
 			</div>
 			<div class="col-sm-6 col-md-4">

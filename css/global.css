@@ -90,8 +90,12 @@ a,  a:visited {
 	 -moz-box-shadow:    0px 3px 20px rgba(50, 50, 50, 0.10);
 	 box-shadow:         0px 3px 20px rgba(50, 50, 50, 0.10);
 	
+	
  }
- 
+ .navbar-collapse {
+	 max-height: none;
+ }
+
  
  .logoLine {
  	position: fixed;
@@ -108,7 +112,7 @@ a,  a:visited {
  
 .navWrap {
 	height: 49px;
-	overflow: hidden;
+	
 }
  
 .navInner {
@@ -140,7 +144,6 @@ a,  a:visited {
  
  .navbar-collapse .stichline {
 	 padding-bottom: 5px;
-	 margin: 0 -20px;
  }
  .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
 	 background: none; 
@@ -148,7 +151,7 @@ a,  a:visited {
  }
  
  .dropdown-menu {
-	 margin: 2px 0 0 -80px;
+	 margin: 0 0 0 -80px;
 	 left: 50%;
  }
  
@@ -500,19 +503,22 @@ ul.checkmark {
  form button {
 	 text-transform: none;
 	 padding: 5px 15px;
-	 background: url("/img/bgSmall.png");
+	 background: #eeeeee;
 	 border: 1px solid LightGray;
 	 text-shadow: 0px 1px 0px white;
+	 -moz-box-shadow:   0 2px 3px #c6c6c6;
+	   -webkit-box-shadow:  0 2px 3px #c6c6c6;
+	   box-shadow:          0 2px 3px #c6c6c6;
  }
  
  form button:hover {
-	 background: url("/img/bgSmallDark.png");
+ 	background: #e2e2e2;
  }
  form button:active {
- 	background: url("/img/bgSmallDark.png");
-	 -moz-box-shadow:    inset 0 5px 15px #c6c6c6;
-	   -webkit-box-shadow: inset 0 5px 15px #c6c6c6;
-	   box-shadow:         inset 0 5px 15px #c6c6c6;
+	 background: #ccc;
+	 -moz-box-shadow:    inset 0 5px 15px #b6b6b6;
+	   -webkit-box-shadow: inset 0 5px 15px #b6b6b6;
+	   box-shadow:         inset 0 5px 15px #b6b6b6;
 	   border-color: LightGray;
 	   outline: none;
  }
