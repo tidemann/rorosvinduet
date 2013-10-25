@@ -1,16 +1,16 @@
 {% if page.title == "Vinduer" %}
 				<aside class="col-sm-12 col-md-3">
 					<ul>
-						<li><a href="#">Vinduer</a></li>
+						<li><a href="{{ site.baseurl }}/vinduer" class="activeAside">Vinduer</a></li>
 						<li><a href="#">Røros Original Koblet</a></li>
-						<li><a href="#" class="activeAside">Røros Isoler</a></li>
+						<li><a href="{{ site.baseurl }}/vinduer/isoler">Røros Isoler</a></li>
 					</ul>
 				</aside>
 {% endif %}
 {% if page.title == "Vinduer - Isoler" %}
 				<aside class="col-sm-12 col-md-3">
 					<ul>
-						<li><a href="#">Vinduer</a></li>
+						<li><a href="{{ site.baseurl }}/vinduer">Vinduer</a></li>
 						<li><a href="#">Røros Original Koblet</a></li>
 						<li><a href="#" class="activeAside">Røros Isoler</a></li>
 							<ul>
@@ -26,7 +26,7 @@
 				<aside class="col-sm-12 col-md-3">
 					<ul>
 						<li><a href="#">Om oss</a></li>
-						<li><a href="#" class="activeAside">Historien</a></li>
+						<li><a href="{{ site.baseurl }}/om-oss/historien" class="activeAside">Historien</a></li>
 						<li><a href="#">Salg og produksjon</a></li>
 						<li><a href="#">Ledige stillinger</a></li>
 						<li><a href="#">Røros miljø og kvalitet</a></li>
@@ -38,8 +38,21 @@
 				<aside class="col-sm-12 col-md-3">
 					<ul>
 						<li><a href="#">Kundeservice</a></li>
-						<li><a href="#" class="activeAside">Kontaktinfo/ordrekontor og service</a></li>
-						<li><a href="#">Reklamasjoner/Serviceskjema</a></li>
+						<li><a href="{{ site.baseurl }}/kundeservice/kontakt" class="activeAside">Kontaktinfo/ordrekontor og service</a></li>
+						<li><a href="{{ site.baseurl }}/kundeservice/reklamasjoner">Reklamasjoner/Serviceskjema</a></li>
+						<li><a href="#">Ofte stilte spørsmål/servicehåndbok</a></li>
+						<li><a href="#">Salg og leveringsbetingelser</a></li>
+					</ul>
+				</aside>
+				
+{% endif %}
+{% if page.title == 'Kundeservice - Reklamasjoner' %}
+
+				<aside class="col-sm-12 col-md-3">
+					<ul>
+						<li><a href="#">Kundeservice</a></li>
+						<li><a href="{{ site.baseurl }}/kundeservice/kontakt">Kontaktinfo/ordrekontor og service</a></li>
+						<li><a href="{{ site.baseurl }}/kundeservice/reklamasjoner" class="activeAside">Reklamasjoner/Serviceskjema</a></li>
 						<li><a href="#">Ofte stilte spørsmål/servicehåndbok</a></li>
 						<li><a href="#">Salg og leveringsbetingelser</a></li>
 					</ul>
