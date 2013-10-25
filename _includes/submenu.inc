@@ -4,16 +4,25 @@
 						<li><a href="#">Vinduer</a></li>
 						<li><a href="#">Røros Original Koblet</a></li>
 						<li><a href="#" class="activeAside">Røros Isoler</a></li>
-							<!--<ul>
+					</ul>
+				</aside>
+{% endif %}
+{% if page.title == "Vinduer - Isoler" %}
+				<aside class="col-sm-12 col-md-3">
+					<ul>
+						<li><a href="#">Vinduer</a></li>
+						<li><a href="#">Røros Original Koblet</a></li>
+						<li><a href="#" class="activeAside">Røros Isoler</a></li>
+							<ul>
 								<li><a href="#">Sidehengslet/Topphengslet</a></li>
 								<li><a href="#">Toppsving</a></li>
 								<li><a href="#">Sidesving</a></li>
 								<li><a href="#">Fastkarm</a></li>
-							</ul>-->
+							</ul>
 					</ul>
 				</aside>
-
-{% elsif page.title == 'om-oss' %}
+{% endif %}
+{% if page.title == 'om-oss' %}
 				<aside class="col-sm-12 col-md-3">
 					<ul>
 						<li><a href="#">Kundeservice</a></li>
@@ -23,7 +32,8 @@
 						<li><a href="#">Salgs- og leveringsbetingelser</a></li>
 					</ul>
 				</aside>
-{% elsif page.title == 'Kundeservice - Kontakt' %}
+{% endif %}
+{% if page.title == 'Kundeservice - Kontakt' %}
 
 				<aside class="col-sm-12 col-md-3">
 					<ul>

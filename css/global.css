@@ -41,6 +41,9 @@ a,  a:visited {
  
  .row {
  }
+ .center {
+	 text-align: center;
+ }
   /* -- Elements -- */
  .stichline {
 	 border-top: 1px dashed DarkGrey;
@@ -332,16 +335,18 @@ a,  a:visited {
 	  
    }
    .txtcolumns {
--moz-column-count:2; /* Firefox */
--webkit-column-count:2; /* Safari and Chrome */
-column-count:2;
--moz-column-gap:80px; /* Firefox */
--webkit-column-gap:80px; /* Safari and Chrome */
-column-gap:80px;
+	-moz-column-count:2; /* Firefox */
+	-webkit-column-count:2; /* Safari and Chrome */
+	column-count:2;
+	-moz-column-gap:80px; /* Firefox */
+	-webkit-column-gap:80px; /* Safari and Chrome */
+	column-gap:80px;
    	
 	   	
    }
-   
+   .img-rounded p {
+	   line-height: 20px;
+   }
    /* -- Contact --*/
    
    .contact {
@@ -417,7 +422,15 @@ column-gap:80px;
 	 line-height: 1.6em;
  }
  
- 
+ul.checkmark li {
+    background:url("/img/checkmark.png") no-repeat 0 50%;
+    padding-left: 30px;
+}
+
+ul.checkmark {
+    list-style-type: none;
+    padding:0
+} 
  /* -- Product -- */
  
  .products {
