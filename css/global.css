@@ -42,8 +42,6 @@ a,  a:visited {
 	 margin: 15px 0 30px 0;
  }
  
- .row {
- }
  .center {
 	 text-align: center;
  }
@@ -232,6 +230,15 @@ a,  a:visited {
 	 border-top: 1px dashed DarkGrey;
 	 border-bottom: 1px solid DarkGrey;
  }
+  .tab-content img {
+	  margin: 0 auto 30px auto;
+	  width: 100%;
+	   max-width: 460px
+  }
+ .tab-content img.centered {
+	 max-width: 380px;
+	display: block;
+ }
  
  .tabRow {
 	 background: #c3c3c2; /* Old browsers */
@@ -300,7 +307,7 @@ a,  a:visited {
 	   padding: 0 0 20px 0;
    }
    
-   .row .content h5 a {
+   .content h5 a {
 	   color: DarkGray;
    }
   
@@ -316,7 +323,7 @@ a,  a:visited {
 	   padding: 0.5em 0;
    }
    
-   .row aside .activeAside {
+   aside .activeAside {
 	   color: black;
    }
    
