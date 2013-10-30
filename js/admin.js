@@ -9,9 +9,9 @@ $(document).ready(function() {
 	$('.content').flowtype({
 	 minimum   : 500,
 	 maximum   : 855,
-	 minFont   : 12,
-	 maxFont   : 20,
-	 fontRatio : 40,
+	 minFont   : 11,
+	 maxFont   : 19,
+	 fontRatio : 30,
 	 lineRatio : 1.7
 	});
 

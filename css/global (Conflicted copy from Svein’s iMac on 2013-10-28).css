@@ -41,19 +41,10 @@ a,  a:visited {
  .lessmarg {
 	 margin: 15px 0 30px 0;
  }
- .noleftmarg {
-	 padding-left: 0;
-	 padding-right: 30px;
- }
  
  .center {
 	 text-align: center;
  }
- 
- .inlined {
-	display: inline-block;
-}
- 
   /* -- Elements -- */
  .stichline {
 	 border-top: 1px dashed DarkGrey;
@@ -63,17 +54,13 @@ a,  a:visited {
  .bigLink {
 	 padding: 0 1px 4px 1px;
  }
- .bigLink:hover, p.bigLink:hover {
+ .bigLink:hover {
 	 border-bottom: 1px dashed #820011;
-	 text-decoration: none;
- }
- p.bigLink:hover a {
-	 border: none;
 	 text-decoration: none;
  }
  .ingress {
 	 font-style: italic;
-	 font-size: 1.4em;
+	 font-size: 1.7em;
 	 line-height: 1.4em;
 	 color: #485473;
 	 margin: 10px 0 35px 0;
@@ -154,7 +141,7 @@ a,  a:visited {
 	 border-bottom-color: #a02226;
   }
  
- .nav > li > a:hover, .nav > li > a:focus,  ul.nav li.activeLi a:hover {
+ .nav > li > a:hover, .nav > li > a:focus {
 	 background: none;
 	 color: #a02226;
  }
@@ -186,9 +173,7 @@ a,  a:visited {
 	 width: 100%;
  }
  
- ul.nav li.activeLi a {
-	
- }
+ 
  
  
  
@@ -208,7 +193,7 @@ a,  a:visited {
 
 
 .karrusell {
-	height: 200px;
+	height: 320px;
 	overflow: hidden;
 }
 
@@ -340,7 +325,7 @@ a,  a:visited {
   
    
    aside ul {
-	   margin: 60px 0 110px 0;
+	   margin: 65px 0 110px 0;
 	   padding: 0 0 60px 30px;
 	   list-style: none;
 	   border-left: 1px dashed DarkGrey;
@@ -496,49 +481,6 @@ ul.checkmark {
  aside ul ul li:first-child {
  font-size: 1em;
  }
- 
- .productContainer {
-	 background: #fff;
-	 padding: 5px;
-	 margin: 0 0 40px 0;
-	  -webkit-box-shadow: 0px 3px 5px rgba(50, 50, 50, 0.15);
-	 -moz-box-shadow:    0px 3px 5px rgba(50, 50, 50, 0.15);
-	 box-shadow:         0px 3px 5px rgba(50, 50, 50, 0.15);
-	 transition: background 0.15s ease;
-	 
- }
-
- .productContainer a:hover {
-	 text-decoration: none;
- }
- .productContainer a:hover .bigLink {
-	 border-bottom: none;
- }
-
- 
- .productContainer:hover {
-	 background: #E1DCD2;
- }
- .productContainer:hover .innerRec {
-	 border-color: Gray;
- }
- 
- .productContainer p {
-	 margin: 20px 0 0 0;
- }
- .productContainer a .productText {
-	 font-size: 0.85em;
-	 color: #000000;
-	 margin: 15px 15px 0 15px;
- }
- 
- .innerRec {
-  border: 1px dashed LightGray;
-  height: 100%;
-  border-radius: 6px;
-  padding: 20px;
-  min-height: 256px;
-}
  
  
  /* -- Form -- */
@@ -766,7 +708,7 @@ footer ul li a.mail {
 		display: none;
 	}
 	.karrusell {
-		height: 280px;
+		height: 140px;
 	}
 
 }

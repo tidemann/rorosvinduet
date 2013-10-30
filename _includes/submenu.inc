@@ -22,6 +22,21 @@
 					</ul>
 				</aside>
 {% endif %}
+{% if page.title == "Vinduer - Isoler - Sidehengslet/Topphengslet" %}
+				<aside class="col-sm-12 col-md-3">
+					<ul>
+						<li><a href="{{ site.baseurl }}/vinduer">Vinduer</a></li>
+						<li><a href="#">Røros Original Koblet</a></li>
+						<li><a href="#" class="activeAside">Røros Isoler</a></li>
+							<ul>
+								<li><a href="#" class="activeAside">Sidehengslet/Topphengslet</a></li>
+								<li><a href="#">Toppsving</a></li>
+								<li><a href="#">Sidesving</a></li>
+								<li><a href="#">Fastkarm</a></li>
+							</ul>
+					</ul>
+				</aside>
+{% endif %}
 {% if page.title == 'Historien' %}
 				<aside class="col-sm-12 col-md-3">
 					<ul>

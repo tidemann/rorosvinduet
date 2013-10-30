@@ -15,9 +15,9 @@
 		    
 		    <ul class="nav nav-justified mainNav">
 		    
-		    <li><a href="{{ site.baseurl }}/">Forsiden</a></li>
+		    <li class=""><a href="{{ site.baseurl }}/">Forsiden</a></li>
 		    
-		      <li class="dropdown">
+		      <li class="dropdown activeLi">
 		        <a href="/vinduer" class="dropdown-toggle" data-toggle="dropdown">Vinduer <b class="caret"></b></a>
 		        <ul class="dropdown-menu">
 		          <li><a href="#">Røros Original Koblet</a></li>

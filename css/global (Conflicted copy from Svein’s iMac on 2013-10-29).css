@@ -49,11 +49,6 @@ a,  a:visited {
  .center {
 	 text-align: center;
  }
- 
- .inlined {
-	display: inline-block;
-}
- 
   /* -- Elements -- */
  .stichline {
 	 border-top: 1px dashed DarkGrey;
@@ -63,17 +58,13 @@ a,  a:visited {
  .bigLink {
 	 padding: 0 1px 4px 1px;
  }
- .bigLink:hover, p.bigLink:hover {
+ .bigLink:hover {
 	 border-bottom: 1px dashed #820011;
-	 text-decoration: none;
- }
- p.bigLink:hover a {
-	 border: none;
 	 text-decoration: none;
  }
  .ingress {
 	 font-style: italic;
-	 font-size: 1.4em;
+	 font-size: 1.7em;
 	 line-height: 1.4em;
 	 color: #485473;
 	 margin: 10px 0 35px 0;
@@ -157,6 +148,7 @@ a,  a:visited {
  .nav > li > a:hover, .nav > li > a:focus,  ul.nav li.activeLi a:hover {
 	 background: none;
 	 color: #a02226;
+	 opacity: 1;
  }
  
  .navbar-collapse .stichline {
@@ -187,7 +179,7 @@ a,  a:visited {
  }
  
  ul.nav li.activeLi a {
-	
+	 opacity: 0.46;
  }
  
  
@@ -504,16 +496,9 @@ ul.checkmark {
 	  -webkit-box-shadow: 0px 3px 5px rgba(50, 50, 50, 0.15);
 	 -moz-box-shadow:    0px 3px 5px rgba(50, 50, 50, 0.15);
 	 box-shadow:         0px 3px 5px rgba(50, 50, 50, 0.15);
-	 transition: background 0.15s ease;
 	 
  }
-
- .productContainer a:hover {
-	 text-decoration: none;
- }
- .productContainer a:hover .bigLink {
-	 border-bottom: none;
- }
+ 
 
  
  .productContainer:hover {
@@ -526,18 +511,13 @@ ul.checkmark {
  .productContainer p {
 	 margin: 20px 0 0 0;
  }
- .productContainer a .productText {
-	 font-size: 0.85em;
-	 color: #000000;
-	 margin: 15px 15px 0 15px;
- }
  
  .innerRec {
   border: 1px dashed LightGray;
   height: 100%;
   border-radius: 6px;
   padding: 20px;
-  min-height: 256px;
+  min-height: 254px;
 }
  
  
