@@ -421,7 +421,7 @@ a,  a:visited {
 	   min-height: 120px;;
    }
    .person, .person div {
-	   padding: 0;
+	   padding: 0 15px 0 0;
    }
    .person p {
 	   line-height: 1.5em;
