@@ -12,9 +12,9 @@
 					<ul>
 						<li><a href="{{ site.baseurl }}/vinduer">Vinduer</a></li>
 						<li><a href="#">Røros Original Koblet</a></li>
-						<li><a href="#" class="activeAside">Røros Isoler</a></li>
+						<li><a href="{{ site.baseurl }}/vinduer/isoler" class="activeAside">Røros Isoler</a></li>
 							<ul>
-								<li><a href="#">Sidehengslet/Topphengslet</a></li>
+								<li><a href="{{ site.baseurl }}/vinduer/isoler/hengslet">Sidehengslet/Topphengslet</a></li>
 								<li><a href="#">Toppsving</a></li>
 								<li><a href="#">Sidesving</a></li>
 								<li><a href="#">Fastkarm</a></li>
@@ -27,9 +27,9 @@
 					<ul>
 						<li><a href="{{ site.baseurl }}/vinduer">Vinduer</a></li>
 						<li><a href="#">Røros Original Koblet</a></li>
-						<li><a href="#" class="activeAside">Røros Isoler</a></li>
+						<li><a href="{{ site.baseurl }}/vinduer/isoler" class="activeAside">Røros Isoler</a></li>
 							<ul>
-								<li><a href="#" class="activeAside">Sidehengslet/Topphengslet</a></li>
+								<li><a href="{{ site.baseurl }}/vinduer/isoler/hengslet" class="activeAside">Sidehengslet/Topphengslet</a></li>
 								<li><a href="#">Toppsving</a></li>
 								<li><a href="#">Sidesving</a></li>
 								<li><a href="#">Fastkarm</a></li>

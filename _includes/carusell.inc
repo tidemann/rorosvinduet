@@ -1,7 +1,7 @@
   <div id="myCarousel" class="carousel slide karrusell">
 	      <div class="carousel-inner">
 	        <div class="item active">
-	          <img src="{{ site.baseurl }}/img/VinterRoros.jpg" alt="First slide">
+	          <img src="{{ site.baseurl }}/img/Vindu_Rondane.jpg" alt="First slide">
 	          <div class="container">
 	            <div class="carousel-caption">
 	              <h1>Skapt for et langt og hardt liv.</h1>
