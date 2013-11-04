@@ -191,13 +191,11 @@ a,  a:visited {
  
  
  /* Firefox fix */
- .nav-tabs.nav-justified > .dropdown .dropdown-menu {
-   top: auto;
-   left: auto;
- }
+
 .nav-justified > .dropdown .dropdown-menu {
    top: auto;
    left: auto;
+   
  }
  
  
@@ -532,7 +530,7 @@ ul.checkmark {
 
  
  .productContainer:hover {
-	 background: #F0ECE4;
+	 background: #F7F4EF;
  }
  .productContainer:hover .innerRec {
 	 border-color: Gray;
