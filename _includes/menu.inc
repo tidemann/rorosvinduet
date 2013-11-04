@@ -17,11 +17,12 @@
 		    
 		    <li class=""><a href="{{ site.baseurl }}/">Forsiden</a></li>
 		    
-		      <li class="dropdown activeLi">
+		      <li class="dropdown">
 		        <a href="/vinduer" class="dropdown-toggle" data-toggle="dropdown">Vinduer <b class="caret"></b></a>
 		        <ul class="dropdown-menu">
 		          <li><a href="#">Røros Original Koblet</a></li>
 		          <li><a href="{{ site.baseurl }}/vinduer/isoler">Røros Vinduet Isoler</a></li>
+		          <li><a href="#">Hvordan velge vindu</a></li>
 		        </ul>
 		      </li>
 		      

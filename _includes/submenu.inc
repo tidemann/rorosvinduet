@@ -4,6 +4,7 @@
 						<li><a href="{{ site.baseurl }}/vinduer" class="activeAside">Vinduer</a></li>
 						<li><a href="#">Røros Original Koblet</a></li>
 						<li><a href="{{ site.baseurl }}/vinduer/isoler">Røros Isoler</a></li>
+						<li><a href="#">Hvordan velge vindu</a></li>
 					</ul>
 				</aside>
 {% endif %}
@@ -19,6 +20,7 @@
 								<li><a href="#">Sidesving</a></li>
 								<li><a href="#">Fastkarm</a></li>
 							</ul>
+						<li><a href="#">Hvordan velge vindu</a></li>
 					</ul>
 				</aside>
 {% endif %}
@@ -34,6 +36,7 @@
 								<li><a href="#">Sidesving</a></li>
 								<li><a href="#">Fastkarm</a></li>
 							</ul>
+						<li><a href="#">Hvordan velge vindu</a></li>
 					</ul>
 				</aside>
 {% endif %}

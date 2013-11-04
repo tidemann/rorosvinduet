@@ -168,8 +168,7 @@ a,  a:visited {
  }
  
  .dropdown-menu {
-	 margin: 0 0 0 -80px;
-	 left: 50%;
+	
  }
  
  .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
@@ -187,8 +186,23 @@ a,  a:visited {
  }
  
  ul.nav li.activeLi a {
-	
+	color: #a02226;
  }
+ 
+ 
+ /* Firefox fix */
+ .nav-tabs.nav-justified > .dropdown .dropdown-menu {
+   top: auto;
+   left: auto;
+ }
+.nav-justified > .dropdown .dropdown-menu {
+   top: auto;
+   left: auto;
+ }
+ 
+ 
+ 
+ 
  
  
  
@@ -418,7 +432,7 @@ a,  a:visited {
 	   min-height: 180px;
    }
    .contactInfo .person {
-	   min-height: 120px;;
+	   max-height: 300px;
    }
    .person, .person div {
 	   padding: 0 15px 0 0;
@@ -435,8 +449,9 @@ a,  a:visited {
    }
    .person img {
 	   background: #444;
-	   width: 100px;
-	   height: 130px;
+	   width: 100%;
+	   height: auto;
+	   max-width: 100px;
 	   
    }
    .person .name {
@@ -743,9 +758,6 @@ footer ul li a.mail {
 	.contact .stichline {
 		margin: 0;
 	}
-	.contact h4 {
-		
-	}
 	.carousel-caption h1 {
 		font-size: 2.8em;
 	}
@@ -796,6 +808,10 @@ footer ul li a.mail {
 	
 	.brand {
 		margin-left: -20px;
+	}
+	
+	.contact .person img {
+		width: 100px;
 	}
 	
 	.brand img {
