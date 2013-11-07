@@ -15,10 +15,10 @@
 		    
 		    <ul class="nav nav-justified mainNav">
 		    
-		    <li class=""><a href="{{ site.baseurl }}/">Forsiden</a></li>
+		    <li><a href="{{ site.baseurl }}/">Forsiden</a></li>
 		    
 		      <li class="dropdown">
-		        <a href="/vinduer" class="dropdown-toggle" data-toggle="dropdown">Vinduer <b class="caret"></b></a>
+		        <a href="{{ site.baseurl }}/vinduer" class="dropdown-toggle disabled" data-toggle="dropdown">Vinduer <b class="caret"></b></a>
 		        <ul class="dropdown-menu">
 		          <li><a href="#">Røros Original Koblet</a></li>
 		          <li><a href="{{ site.baseurl }}/vinduer/isoler">Røros Vinduet Isoler</a></li>

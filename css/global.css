@@ -167,9 +167,15 @@ a,  a:visited {
 	 border: none;
  }
  
- .dropdown-menu {
-	
- }
+.dropdown-menu li:hover .sub-menu {
+    visibility: visible;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+ 
+
  
  .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
 	 background: #820011;
@@ -520,6 +526,9 @@ ul.checkmark {
 	 transition: background 0.15s ease;
 	 
  }
+ .bigpC .innerRec {
+	 min-height:401px;
+ }
 
  .productContainer a:hover {
 	 text-decoration: none;
@@ -560,6 +569,15 @@ ul.checkmark {
  .inlined .innerRec {
 	 min-height: 200px;
  }
+ 
+ 
+ .roundImg {
+	 width: 100%;
+	 height: auto;
+	 border-radius: 50%;
+	 max-width: 240px;
+ }
+ 
  
  .tilbehorSection {
 	 margin: 20px 0 40px 0;

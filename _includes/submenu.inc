@@ -40,6 +40,16 @@
 					</ul>
 				</aside>
 {% endif %}
+{% if page.title == "Dører" %}
+				<aside class="col-sm-12 col-md-3">
+					<ul>
+						<li><a href="{{ site.baseurl }}/vinduer" class="activeAside">Dører</a></li>
+						<li><a href="#">Speildører</a></li>
+						<li><a href="{{ site.baseurl }}/vinduer/isoler">Paneldører</a></li>
+						<li><a href="#">Terrassedører</a></li>
+					</ul>
+				</aside>
+{% endif %}
 {% if page.title == 'Historien' %}
 				<aside class="col-sm-12 col-md-3">
 					<ul>
