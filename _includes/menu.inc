@@ -15,10 +15,11 @@
 		    
 		    <ul class="nav nav-justified mainNav">
 		    
-		    <li><a href="{{ site.baseurl }}/">Forsiden</a></li>
+		    <li><a href="{{ site.baseurl }}/" {% if page.title == "Røros - Vinduer og dører" %}class="activeLi"{% endif %}>Forsiden</a></li>
 		    
 		      <li class="dropdown">
-		        <a href="{{ site.baseurl }}/vinduer" class="dropdown-toggle disabled" data-toggle="dropdown">Vinduer <b class="caret"></b></a>
+		        <a href="{{ site.baseurl }}/vinduer" class="dropdown-toggle disabled 
+		        	{% if page.title == "Vinduer" or page.title == "Vinduer - Isoler" or page.title =="Vinduer - Isoler - Sidehengslet/Topphengslet" %}activeLi{% endif %}" data-toggle="dropdown">Vinduer <b class="caret"></b></a>
 		        <ul class="dropdown-menu">
 		          <li><a href="#">Røros Original Koblet</a></li>
 		          <li><a href="{{ site.baseurl }}/vinduer/isoler">Røros Vinduet Isoler</a></li>
@@ -27,7 +28,7 @@
 		      </li>
 		      
 		      <li class="dropdown">
-		        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dører <b class="caret"></b></a>
+		        <a href="{{ site.baseurl }}/dorer" class="dropdown-toggle disabled {% if page.title == "Dører" %}activeLi{% endif %}" data-toggle="dropdown">Dører <b class="caret"></b></a>
 		        <ul class="dropdown-menu">
 		          <li><a href="#">Speildører</a></li>
 		          <li><a href="#">Paneldører</a></li>
@@ -36,7 +37,7 @@
 		      </li>
 		      
 		      <li class="dropdown">
-		        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Om oss <b class="caret"></b></a>
+		        <a href="{{ site.baseurl }}/om-oss/historien" class="dropdown-toggle disabled {% if page.title == "Historien" %}activeLi{% endif %}" data-toggle="dropdown">Om oss <b class="caret"></b></a>
 		        <ul class="dropdown-menu">
 		          <li><a href="{{ site.baseurl }}/om-oss/historien">Historien</a></li>
 		          <li><a href="#">Salg og produksjon</a></li>
@@ -46,7 +47,7 @@
 		      </li>
 		      
 		      <li class="dropdown">
-		        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Kundeservice <b class="caret"></b></a>
+		        <a href="{{ site.baseurl }}/kundeservice/kontakt" class="dropdown-toggle disabled {% if page.title == "Kundeservice - Kontakt" or page.title == "Kundeservice - Reklamasjoner" %}activeLi{% endif %}" data-toggle="dropdown">Kundeservice <b class="caret"></b></a>
 		        <ul class="dropdown-menu">
 		          <li><a href="{{ site.baseurl }}/kundeservice/kontakt">Kontaktinfo/ordrekontor og service</a></li>
 		          <li><a href="{{ site.baseurl }}/kundeservice/reklamasjoner">Reklamasjoner/Serviceskjema</a></li>

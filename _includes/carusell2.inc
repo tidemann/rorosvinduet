@@ -4,7 +4,7 @@
 	          <img src="{{ site.baseurl }}/img/VinterRoros.jpg" alt="First slide">
 	          <div class="container">
 	            <div class="carousel-caption">
-	              <h1>Skapt for et langt og hardt liv.</h1>
+	              <h1>Skapt for et langt og hardt liv</h1>
 	            </div>
 	          </div>
 	        </div>
@@ -12,7 +12,7 @@
 	          <img src="{{ site.baseurl }}/img/hytte.jpg" alt="Second slide">
 	          <div class="container">
 	            <div class="carousel-caption">
-	              <h1>Another example headline.</h1>
+	              <h1>Det originale hyttevinduet</h1>
 	            </div>
 	          </div>
 	        </div>
@@ -20,7 +20,7 @@
 	          <img src="{{ site.url }}/img/kids.jpg" alt="Third slide">
 	          <div class="container">
 	            <div class="carousel-caption">
-	              <h1>One more for good measure.</h1>
+	              <h1>Godt inneklima</h1>
 	            </div>
 	          </div>
 	        </div>

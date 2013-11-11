@@ -191,8 +191,8 @@ a,  a:visited {
 	 width: 100%;
  }
  
- ul.nav li a.activeLi {
-	color: #820011;
+ ul.nav li.activeLi a {
+	color: #a02226;
  }
  
  
@@ -234,26 +234,10 @@ a,  a:visited {
 	display: none;
 }
 
-.tilbehorSection .carousel-indicators {
-	bottom: 35px;
-	
-}
-
 .carousel-caption2 {
-	font-size: 0.9em;
-	text-align: center;
+	font-size: 1em;
 	position: absolute;
-	bottom: -5px;
-	padding: 5px 5px 10px 5px;
-	width: 100%;
-	margin-left: -15px;
-	color: rgba(255,255,255,0.5);
-	background: rgba(0,0,0,0.05);
-	transition: all 0.15s ease;
-}
-.tilbehorSection .carousel:hover .carousel-caption2 {
-	background: rgba(0,0,0,0.65);
-	color: white;
+	bottom: -12px;
 }
 
  /* -- Thumbnails-row -- */
