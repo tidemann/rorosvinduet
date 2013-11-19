@@ -15,47 +15,23 @@
 		  <div class="container navInner">
 		    
 		    <ul class="nav nav-justified mainNav">
-		      
-		      <li><a href="$Themedir/" >Forsiden</a></li>
-		      
-		      <li class="dropdown">
-		        <a href="$Themedir/vinduer" class="dropdown-toggle disabled 
-		        	                                 activeLi" data-toggle="dropdown">Vinduer <b class="caret"></b></a>
-		        <ul class="dropdown-menu">
-		          <li><a href="#">Røros Original Koblet</a></li>
-		          <li><a href="$Themedir/vinduer/isoler">Røros Vinduet Isoler</a></li>
-		          <li><a href="#">Hvordan velge vindu</a></li>
-		        </ul>
-		      </li>
-		      
-		      <li class="dropdown">
-		        <a href="$Themedir/dorer" class="dropdown-toggle disabled " data-toggle="dropdown">Dører <b class="caret"></b></a>
-		        <ul class="dropdown-menu">
-		          <li><a href="#">Speildører</a></li>
-		          <li><a href="#">Paneldører</a></li>
-		          <li><a href="#">Terrassedører</a></li>
-		        </ul>
-		      </li>
-		      
-		      <li class="dropdown">
-		        <a href="$Themedir/om-oss/historien" class="dropdown-toggle disabled " data-toggle="dropdown">Om oss <b class="caret"></b></a>
-		        <ul class="dropdown-menu">
-		          <li><a href="$Themedir/om-oss/historien">Historien</a></li>
-		          <li><a href="#">Salg og produksjon</a></li>
-		          <li><a href="#">Ledige stillinger</a></li>
-		          <li><a href="#">Rørs miljø og kvalitet</a></li>
-		        </ul>
-		      </li>
-		      
-		      <li class="dropdown">
-		        <a href="$Themedir/kundeservice/kontakt" class="dropdown-toggle disabled " data-toggle="dropdown">Kundeservice <b class="caret"></b></a>
-		        <ul class="dropdown-menu">
-		          <li><a href="$Themedir/kundeservice/kontakt">Kontaktinfo/ordrekontor og service</a></li>
-		          <li><a href="$Themedir/kundeservice/reklamasjoner">Reklamasjoner/Serviceskjema</a></li>
-		          <li><a href="#">Ofte stilte spørsmål/servicehåndbok</a></li>
-		          <li><a href="#">Salgs- og leveringsbetingelser</a></li>
-		        </ul>
-		      </li>
+		      <% loop Menu(2) %>
+          <% if $NavChildren %>
+            <li class="dropdown"><a href="$Link" class="dropdown-toggle disabled  $LinkingMode" >$MenuTitle.XML <b class="caret"></b></a>
+          <% else %>
+            <li><a href="$Link" >$MenuTitle.XML</a>
+          <% end_if  %>
+          
+              <% if $NavChildren %>    
+                <ul class="dropdown-menu">
+                  <% loop $NavChildren %>
+    	              <li><a href="$Link">$MenuTitle.XML</a></li>
+                  <% end_loop %>
+                </ul>
+              <% end_if  %>
+            </li>  
+           
+          <% end_loop %>		      
 		    </ul>
       </div>
       <div class="stichline"> </div>

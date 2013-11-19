@@ -248,12 +248,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-framework.git",
-                "reference": "bd5fdf1f1964a550f6fb2ca339b3d98a75d8a89f"
+                "reference": "be99d1532bbeab34e797bf100335d49b5aa337f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/bd5fdf1f1964a550f6fb2ca339b3d98a75d8a89f",
-                "reference": "bd5fdf1f1964a550f6fb2ca339b3d98a75d8a89f",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/be99d1532bbeab34e797bf100335d49b5aa337f4",
+                "reference": "be99d1532bbeab34e797bf100335d49b5aa337f4",
                 "shasum": ""
             },
             "require": {
@@ -286,7 +286,7 @@
                 "framework",
                 "silverstripe"
             ],
-            "time": "2013-11-15 11:03:43"
+            "time": "2013-11-18 20:09:59"
         },
         {
             "name": "silverstripe/iframe",

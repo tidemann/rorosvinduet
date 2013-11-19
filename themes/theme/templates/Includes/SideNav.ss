@@ -1,14 +1,25 @@
+
 <aside class="col-sm-12 col-md-3">
 	<ul>
-		<li><a href="$Themedir/vinduer">Vinduer</a></li>
-		<li><a href="#">Røros Original Koblet</a></li>
-		<li><a href="$Themedir/vinduer/isoler" class="activeAside">Røros Isoler</a></li>
-		<ul>
-			<li><a href="$Themedir/vinduer/isoler/hengslet" class="activeAside">Sidehengslet/Topphengslet</a></li>
-			<li><a href="#">Toppsving</a></li>
-			<li><a href="#">Sidesving</a></li>
-			<li><a href="#">Fastkarm</a></li>
-		</ul>
-		<li><a href="#">Hvordan velge vindu</a></li>
-	</ul>
+    <% with Level(1) %>
+      <li class="$LinkingMode"><a href="$Link">$MenuTitle.XML</a></li>    
+    <% end_with %>
+   	<% loop Menu(2) %>
+    		<li><a href="$Link">$MenuTitle.XML</a></li>
+        <% if NavChildren %>
+          <ul>
+            <% loop NavChildren %>
+			        <li class="$LinkingMode"><a href="$Link">$MenuTitle.XML</a></li>  
+                <% if NavChildren %>
+                  <ul>
+                    <% loop NavChildren %>
+			                <li class="$LinkingMode"><a href="$Link">$MenuTitle.XML</a></li>            
+                    <% end_loop %>            
+                  </ul>
+                <% end_if  %>          
+            <% end_loop %>            
+          </ul>
+        <% end_if  %>
+    <% end_loop %>
+  </ul>
 </aside>
