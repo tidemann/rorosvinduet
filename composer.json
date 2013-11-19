@@ -1,0 +1,22 @@
+{
+	  "name": "silverstripe/installer",
+	  "description": "The SilverStripe Framework Installer",
+	  "require": {
+		    "php": ">=5.3.2",
+	      "silverstripe/cms": "3.1.*",
+		    "silverstripe/framework": "3.1.*",
+	  	  "bummzack/sortablefile": "*",
+	  	  "ajshort/silverstripe-gridfieldextensions": "*",
+		    "silverstripe/accessibility": "*",
+		    "silverstripe/iframe": "*",
+		    "silverstripe/translatable": "*",
+		    "silverstripe/userforms": "*",
+		    "silverstripe/versionedfiles": "*",
+		    "silverstripe/versionfeed": "*"
+
+	  },
+	  "config": {
+		    "process-timeout": 600	
+	  },
+	  "minimum-stability": "dev"
+}
