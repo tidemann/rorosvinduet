@@ -22,4 +22,3 @@ if (class_exists('Translatable')) {
 	SiteTree::add_extension('Translatable');
 	SiteConfig::add_extension('Translatable');
 }
-
