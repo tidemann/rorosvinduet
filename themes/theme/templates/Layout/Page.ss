@@ -5,16 +5,17 @@
       $Breadcrumbs
     </div>
   <% end_if %>     
-  
-  <p class="ingress">Vinduer og dører fra Røros Bruk er tuftet på en lang industrihistorie.</p>
-  
+
+  <% include Introduction %>  
+
   <div class="tilbehorSection row">	        
+    <% include LeftRightBlocks %>
     $Content
     $Form
 	</div>
 
   <% loop SubPages %>
-  <% include SubPage %>        
+    <% include SubPage %>        
   <% end_loop %>
 
 </div>        

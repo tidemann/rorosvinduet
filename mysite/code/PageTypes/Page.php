@@ -4,6 +4,10 @@ class Page extends SiteTree {
 	private static $db = array(
         "Subtitle" => "Text",
         "Introduction" => "Text",
+
+        'LeftBlock' => 'HTMLText',
+        'RightBlock' => 'HTMLText',
+
         "SideMenuTitle" => "Text",
         "SideMenuIntro" => "Text",
 	);
@@ -21,9 +25,7 @@ class Page extends SiteTree {
     );
 
 
-
     private static $many_many_extraFields=array( 'GalleryImages'=>array('SortOrder'=>'Int'), 'Links'=>array('SortOrder'=>'Int'));
-
 
 	function getCMSFields() {
 		$fields = parent::getCMSFields();
@@ -31,9 +33,15 @@ class Page extends SiteTree {
         $fields->addFieldToTab("Root.Main", new TextAreaField('Subtitle', _t('Page.SUBTITLE', 'Subtitle')), "Content");
         $fields->addFieldToTab("Root.Main", new TextAreaField('Introduction', _t('Page.INTRODUCTION', 'Introduction')), "Content");
 
+
+        $fields->addFieldToTab("Root.Main", HtmlEditorField::create('LeftBlock', _t('Page.LeftBlock', 'Left'))->setRows(12), "Content");
+        $fields->addFieldToTab("Root.Main", HtmlEditorField::create('RightBlock', _t('Page.RightBlock', 'Right'))->setRows(12), "Content");
+ 
+
         $fields->addFieldToTab("Root.Images", $image = UploadField::create('Packshot', _t('Product.packshot', 'Packshot')));       
         $fields->addFieldToTab("Root.Images", $uploadField = SortableUploadField::create('CarouselImags', _t('Page.CarouselImags', 'Gallery Images')));
         $uploadField->setFolderName('CarouselImags');
+        $uploadField->setFileEditFields('getCustomFields');
         $uploadField->setAllowedExtensions(array('jpg', 'jpeg', 'png', 'gif'));
 
         $fields->addFieldToTab("Root.SideMenu", new TextField('SideMenuTitle', _t('Page.TITLE', 'Title')));
