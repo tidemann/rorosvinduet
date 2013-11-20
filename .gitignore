@@ -9,5 +9,4 @@ silverstripe-cache
 .DS_Store
 .vagrant
 VagrantFile
-vendor/
-
+vendor
