@@ -22,7 +22,7 @@
 				    	</div><!-- circle -->
 			      <div class="caption">
 			        <h3>Vinduer</h3>
-			        <p>Et isolervindu med 2 eller 3- lags glass med ulike utenpåliggende sprosse-løsninger. Kan kombineres med et utall hengsleløsninger og glassvalg.</p>
+			        <p>Et isolervindu med 2 eller 3- lags glass med ulike utenpåliggende sprosse-løsninger. Kan kombineres med et utall hengsleløsninger og glassvalg.</p>
 			        <p><a href="/rorosvinduet/vinduer" class="bigLink">Les mer</a></p>
 			      </div>
 			    </div>
