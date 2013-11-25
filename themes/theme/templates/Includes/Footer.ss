@@ -23,7 +23,7 @@
 					Tlf.: 72 40 63 00<br />
 					Fax: 72 40 62 91<br />
 					E-mail: <a href="#" class="mail">ordre.roros@roros-bruk.no</a><br /><br />
-					Ring eller send oss en mail hvis du vil ha tilsendt brosjyre, prisliste og/eller monteringsanvisning.</li>
+					Ring eller send oss en mail hvis du vil ha tilsendt brosjyre, prisliste og/eller monteringsanvisning.</li>
 			</ul>
 		</div>
 	</div><!-- container end -->
