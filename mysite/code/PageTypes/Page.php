@@ -10,6 +10,7 @@ class Page extends SiteTree {
 
         "SideMenuTitle" => "Text",
         "SideMenuIntro" => "Text",
+        "ShowIntroInContainer" => "Boolean",
 	);
 
 	private static $has_one = array(
@@ -63,6 +64,12 @@ class Page extends SiteTree {
 
         return $fields;
     }
+    function getSettingsFields() { 
+      $fields = parent::getSettingsFields(); 
+      $fields->addFieldToTab("Root.Settings", new CheckBoxField('ShowIntroInContainer', 'Show intro in container?'),'ShowInSearch'); 
+      return $fields; 
+   }
+
 
  
     public function GalleryImages() {
