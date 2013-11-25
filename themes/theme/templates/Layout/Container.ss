@@ -37,6 +37,5 @@
   $Content
 	
  </div>
-
 <% include SideNav %>
 
