@@ -41,7 +41,7 @@ class Page extends SiteTree {
         $fields->addFieldToTab("Root.Main", HtmlEditorField::create('RightBlock', _t('Page.RightBlock', 'Right'))->setRows(12), "Content");
  
 
-        $fields->addFieldToTab("Root.Images", $image = UploadField::create('TeaserImage', _t('Product.TeaserImage', 'TeaserImage')));       
+        $fields->addFieldToTab("Root.Images", $image = UploadField::create('TeaserImage', _t('Page.TeaserImage', 'TeaserImage')));       
         $fields->addFieldToTab("Root.Images", $uploadField = SortableUploadField::create('CarouselImages', _t('Page.CarouselImages', 'Gallery Images')));
         $uploadField->setFolderName('CarouselImages');
         $uploadField->setFileEditFields('getCustomFields');
@@ -92,8 +92,20 @@ class Page extends SiteTree {
     }
 
     public function TeaserChildren() {
-        return $this->Children();//->filter(array("ShowIntroInContainer")) ;
-        //TODO: add filter here
+        return $this->Children()->filter("ShowIntroInContainer", true);
+    }
+    public function TeaserCols() {
+        $items = $this->TeaserChildren()->Count();
+        $cols = 12;
+        if ($items > 0)
+        {
+            $cols = 12 /$items;
+            if ($cols < 3){
+                $cols = 3;
+            }
+        }
+
+        return  $cols;
     }
 
 

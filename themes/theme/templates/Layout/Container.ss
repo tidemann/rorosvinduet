@@ -5,9 +5,9 @@
       $Breadcrumbs
     </div>
   	<% end_if %>  
-    
     <% loop $TeaserChildren %>
-		<div class="col-sm-6 col-md-6 img-rounded productContainer bigpC">
+
+		<div class="col-sm-{$Parent.TeaserCols} col-md-{$Parent.TeaserCols} img-rounded productContainer bigpC">
 			<a href="$Link">
 				<div class="innerRec">
 					<div class="center">

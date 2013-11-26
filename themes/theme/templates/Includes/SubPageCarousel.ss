@@ -1,70 +1,27 @@
-<div id="InlineCarousel_0" class="carousel slide tilbehorSlide" data-interval="false">
+
+
+<div id="InlineCarousel_{$ID}" class="carousel slide tilbehorSlide" data-interval="false">
+
+	<% loop CarouselImages %>
 	<div class="carousel-inner img-rounded">
-		
-		<div class="item active">
+
+		<div class="item <% if First %>active<% end_if %>">
+				
+
 			<img src="../../../img/produkter/vindu_isoler/Vrider7.JPG" />
 			<div class="container">
 				<div class="carousel-caption2">
-					Standard vrider
+					TODO:add image caption
 				</div>
 			</div>
-		</div>
-		
-		<div class="item">
-			<img src="../../../img/produkter/vindu_isoler/Hasperstandard.JPG" />
-			<div class="container">
-				<div class="carousel-caption2">
-					Haspe 175 i gull og krom
-				</div>
-			</div>
-		</div>
-		
-		<div class="item">
-			<img src="../../../img/produkter/vindu_isoler/HasperSortHvit.JPG" />
-			<div class="container">
-				<div class="carousel-caption2">
-					Haspe 175 i sort og hvit
-				</div>
-			</div>
-		</div>
-		
-		<div class="item">
-			<img src="../../../img/produkter/vindu_isoler/HasperGull.JPG" />
-			<div class="container">
-				<div class="carousel-caption2">
-					Haspe 1324 (dråpehaspe) i messing
-				</div>
-			</div>
-		</div>
-		
-		<div class="item">
-			<img src="../../../img/produkter/vindu_isoler/HasperKrom.JPG" />
-			<div class="container">
-				<div class="carousel-caption2">
-					Haspe 1324 i krom
-				</div>
-			</div>
-		</div>
-		<div class="item">
-			<img src="../../../img/produkter/vindu_isoler/HasperGull2.JPG" />
-			<div class="container">
-				<div class="carousel-caption2">
-					Haspe MP380 i messing
-				</div>
-			</div>		
 		</div>
 	</div>
-
+	<% end_loop %>
 	<ol class="carousel-indicators">
-		<li data-target="#InlineCarousel_0" data-slide-to="0" class="active"></li>
-		<li data-target="#InlineCarousel_0" data-slide-to="1"></li>
-		<li data-target="#InlineCarousel_0" data-slide-to="2"></li>
-		<li data-target="#InlineCarousel_0" data-slide-to="3"></li>
-		<li data-target="#InlineCarousel_0" data-slide-to="4"></li>
-		<li data-target="#InlineCarousel_0" data-slide-to="25"></li>
+		<% loop CarouselImages %>
+		<li data-target="#InlineCarousel_{$ID}" data-slide-to="{$Pos(0)}" <% if First %>class="active"<% end_if %>></li>
+		<% end_loop %>
 	</ol>
-
-	<a class="left carousel-control" href="#InlineCarousel_0" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-	<a class="right carousel-control" href="#InlineCarousel_0" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-
+	<a class="left carousel-control" href="#InlineCarousel_{$ID}" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+	<a class="right carousel-control" href="#InlineCarousel_{$ID}" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 </div>
