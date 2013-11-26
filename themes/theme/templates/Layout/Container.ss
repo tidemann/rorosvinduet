@@ -7,7 +7,8 @@
   	<% end_if %>  
     <% loop $TeaserChildren %>
 
-		<div class="col-sm-{$Parent.TeaserCols} col-md-{$Parent.TeaserCols} img-rounded productContainer bigpC">
+
+		<div class="col-sm-{$Parent.TeaserCols} col-md-{$Parent.TeaserCols} img-rounded productContainer <% if Parent.TeaserCols>3 %>bigpC<% end_if %>">
 			<a href="$Link">
 				<div class="innerRec">
 					<div class="center">
