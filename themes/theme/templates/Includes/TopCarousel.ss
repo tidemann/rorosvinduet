@@ -1,5 +1,4 @@
-<!-- TODO: SWITCH ON CLASS karrusell -->
-<div id="myCarousel" class="carousel slide ">
+<div id="myCarousel" class="carousel slide<% if LargeTopCarousel %> karrusell<% end_if %>">
 	<div class="carousel-inner">
 	<% loop CarouselImages %>
 		<div class="item <% if First %>active<% end_if %>">
@@ -16,5 +15,3 @@
 	<a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
 	<a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 </div>
-
-

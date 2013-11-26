@@ -12,6 +12,7 @@ class Page extends SiteTree {
         "SideMenuTitle" => "Text",
         "SideMenuIntro" => "Text",
         "ShowIntroInContainer" => "Boolean",
+        "LargeTopCarousel" => "Boolean",
 	);
 
 	private static $has_one = array(
@@ -43,6 +44,7 @@ class Page extends SiteTree {
 
         $fields->addFieldToTab("Root.Images", $image = UploadField::create('TeaserImage', _t('Page.TeaserImage', 'TeaserImage')));       
         $fields->addFieldToTab("Root.Images", $uploadField = SortableUploadField::create('CarouselImages', _t('Page.CarouselImages', 'Gallery Images')));
+        $fields->addFieldToTab("Root.Images", new CheckBoxField('LargeTopCarousel', _t('Page.LARGETOPCAROUSEL', 'Use large top carousel'),'Gallery Images')); 
         $uploadField->setFolderName('CarouselImages');
         $uploadField->setFileEditFields('getCustomFields');
         $uploadField->setAllowedExtensions(array('jpg', 'jpeg', 'png', 'gif'));
