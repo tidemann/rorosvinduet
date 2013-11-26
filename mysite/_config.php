@@ -4,13 +4,12 @@ global $project;
 $project = 'mysite';
 
 global $database;
-$database = 'ss_rorosvinduet';
+$database = 'SS_mysite';
 
 require_once('conf/ConfigureFromEnv.php');
 
 // Set the site locale
-i18n::set_locale('nb_NO');
-
-
+i18n::set_locale('en_US');
+SiteConfig::add_extension('SitelSiteConfig');
 Image::add_extension('GalleryImageExtension');
 File::add_extension('PageFilesExtension');

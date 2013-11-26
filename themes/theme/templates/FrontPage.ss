@@ -66,55 +66,28 @@
 			<div class="tabContainer">
 				<div class="container">
 					<ul class="nav nav-tabs nav-justified" id="myTab">
-					  <li class="active"><a href="#home">Førsteklasses impregnering</a></li>
-					  <li><a href="#profile">Suveren U-verdi</a></li>
-					  <li><a href="#messages">Vedlikeholdsfritt</a></li>
-					  <li><a href="#settings">Mange detaljer</a></li>
+					  <% loop SubPages %>
+					  	<li<% if First %> class="active"<% end_if %>><a href="#{$ID}">$MenuTitle.XML</a></li>
+
+					  <% end_loop %>
 					</ul>
 				</div><!-- container end -->
 			</div>
 				<div class="container">
 					<div class="tab-content">
-					  <div class="tab-pane active fade in" id="home">
-					  	<div class="col-md-6">
-							<h2>Førsteklasses impregnering</h2>
-							<p class="tabP">Alle våre produkter er vakuumimpregnert. Dette er vesentlig for levetiden. SINTEF Byggforsk anbefaler impregneringsmetoden vi benytter.</p>
-							<p class="tabP">Vakuumimpregnering trenger dypt inn i treverket og gir langvarig, god beskyttelse mot sopp og råte.</p>
-							<p><a href="/rorosvinduet/vinduer" class="bigLink">Les mer</a></p>
+						<% loop SubPages %>
+						<div class="tab-pane <% if First %>active<% end_if %> fade in" id="{$ID}">
+						  	<div class="col-md-6">
+								<h2>$Title</h2>
+								$Content
+							</div>
+							<div class="col-md-6">
+								<!--img class="righted" src="$" alt=".."-->
+								$TeaserImage
+							</div>
 						</div>
-						<div class="col-md-6">
-							<img class="righted" src="img/vakum.png" alt="..">
-						</div>
-					  </div>
-					  <div class="tab-pane fade" id="profile">
-						<div class="col-md-6">
-							<h2>Suveren på U-verdi</h2>
-							<p class="tabP">Vinduene kan leveres med en rekke alternative glassvalg.</p>
-							<img src="img/graph.png" alt="..">
-							<p><a href="/rorosvinduet/vinduer" class="bigLink">Les mer</a></p>
-						</div>
-						<div class="col-md-6">
-							<img class="righted" src="img/u-verdi.png" alt="..">
-						</div>
-					  </div>
-					  <div class="tab-pane fade" id="messages">
-					  	<div class="col-md-6">
-							<h2>No hassle</h2>
-							<p class="tabP">Vinduene kan leveres med en rekke alternative glassvalg.</p>
-						</div>
-						<div class="col-md-6">
-							<img src="img/u-verdi.png" alt="..">
-						</div>
-					  </div>
-					  <div class="tab-pane fade" id="settings">
-					  	<div class="col-md-6">
-							<h2>Masse flott</h2>
-							<p class="tabP">Vinduene kan leveres med en rekke alternative glassvalg.</p>
-						</div>
-						<div class="col-md-6">
-							<img src="img/u-verdi.png" alt="..">
-						</div>
-					  </div>
+
+						<% end_loop %>
 					</div>
 				</div><!-- container end -->
 			
