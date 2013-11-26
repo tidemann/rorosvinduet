@@ -13,50 +13,24 @@
 		
 			<div class="thumbRow">
 			<div class="container">
-			  <div class="col-sm-12 col-md-4 col-lg-4">
-				    <div class="thumbnail">
-				    	<div class="circle">
-					      <div class="stichCircle">
-					      	<img src="img/thumb1.jpg" alt="...">
-					      	</div>
-				    	</div><!-- circle -->
-			      <div class="caption">
-			        <h3>Vinduer</h3>
-			        <p>Et isolervindu med 2 eller 3- lags glass med ulike utenpåliggende sprosse-løsninger. Kan kombineres med et utall hengsleløsninger og glassvalg.</p>
-			        <p><a href="/rorosvinduet/vinduer" class="bigLink">Les mer</a></p>
-			      </div>
-			    </div>
-			  </div>
-			  
-			  <div class="col-sm-12 col-md-4 col-lg-4">
-			    <div class="thumbnail">
-			    	<div class="circle">
-				    	<div class="stichCircle">
-							<img src="img/thumb2.jpg" alt="...">
-				    	</div>
-			    	</div><!-- circle -->
-			      <div class="caption">
-			        <h3>Hvordan velge vindu</h3>
-			        <p>Her kan du se hvordan du velge riktig Røros Vindu. Guiden tar for seg alle detaljer og varer.</p>
-			        <p><a href="/rorosvinduet/vinduer" class="bigLink">Les mer</a></p>
-			      </div>
-			    </div>
-			  </div>
-			  
-			  <div class="col-sm-12 col-md-4 col-lg-4">
-			    <div class="thumbnail">
-			    	<div class="circle">
-				    	<div class="stichCircle">
-							<img src="img/thumb3.jpg" alt="...">
-				    	</div>
-					</div><!-- circle -->
-			      <div class="caption">
-			        <h3>Dører</h3>
-			        <p>Røros Døren har topp kvalitet ned til minste detalj. Døren er laget av vakuumimpregnert furu og leveres i mange forskjellige varianter for hus og hytte.</p>
-			        <p><a href="/rorosvinduet/dorer" class="bigLink">Les mer</a></p>
-			      </div>
-			    </div>
-			  </div>
+				<% loop Teasers %>
+				  <div class="col-sm-12 col-md-4 col-lg-4">
+					    <div class="thumbnail">
+					    	<div class="circle">
+						      <div class="stichCircle">
+						      	<a href="$Link">$TeaserImage.SetWidth(220)</a>
+						      	</div>
+					    	</div><!-- circle -->
+				      <div class="caption">
+				        <h3>$Title</h3>
+				        <% if TeaserText %>
+				        <p>$TeaserText</p>
+				        <% end_if %>
+				        <p><a href="$Link" class="bigLink">Les mer</a></p>
+				      </div>
+				    </div>
+				  </div>
+			  <% end_loop %>
 			</div><!-- thumb -->
 			</div><!-- container end -->
 			
