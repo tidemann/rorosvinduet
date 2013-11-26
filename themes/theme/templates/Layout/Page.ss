@@ -8,11 +8,11 @@
 
   <% include Introduction %>  
 
-  <div class="tilbehorSection row">	        
+  <!--div class="tilbehorSection row"></div-->
     <% include LeftRightBlocks %>
     $Content
     $Form
-	</div>
+
 
   <% loop SubPages %>
     <% include SubPage %>        

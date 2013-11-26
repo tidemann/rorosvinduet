@@ -2,21 +2,20 @@
 
 <div id="InlineCarousel_{$ID}" class="carousel slide tilbehorSlide" data-interval="false">
 
-	<% loop CarouselImages %>
 	<div class="carousel-inner img-rounded">
-
+	<% loop CarouselImages %>
 		<div class="item <% if First %>active<% end_if %>">
-				
-
-			<img src="../../../img/produkter/vindu_isoler/Vrider7.JPG" />
+			
+			
+			<img src="$URL"  alt="$Title" />
 			<div class="container">
 				<div class="carousel-caption2">
-					TODO:add image caption
+					 $Title
 				</div>
 			</div>
 		</div>
-	</div>
 	<% end_loop %>
+	</div>
 	<ol class="carousel-indicators">
 		<% loop CarouselImages %>
 		<li data-target="#InlineCarousel_{$ID}" data-slide-to="{$Pos(0)}" <% if First %>class="active"<% end_if %>></li>
