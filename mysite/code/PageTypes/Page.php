@@ -16,7 +16,10 @@ class Page extends SiteTree {
 	);
 
 	private static $has_one = array(
-        'TeaserImage' => 'Image',
+        
+        'MainImage' => 'Image',
+        'TeaserImage' => 'Image'
+
 	);
 
 
@@ -41,8 +44,8 @@ class Page extends SiteTree {
         $fields->addFieldToTab("Root.Main", HtmlEditorField::create('LeftBlock', _t('Page.LeftBlock', 'Left'))->setRows(12), "Content");
         $fields->addFieldToTab("Root.Main", HtmlEditorField::create('RightBlock', _t('Page.RightBlock', 'Right'))->setRows(12), "Content");
  
-
-        $fields->addFieldToTab("Root.Images", $image = UploadField::create('TeaserImage', _t('Page.TeaserImage', 'TeaserImage')));       
+        $fields->addFieldToTab("Root.Images", $image = UploadField::create('MainImage', _t('Page.MainImage', 'Main Image')));       
+        $fields->addFieldToTab("Root.Images", $image = UploadField::create('TeaserImage', _t('Page.TeaserImage', 'Teaser Image')));       
         $fields->addFieldToTab("Root.Images", $uploadField = SortableUploadField::create('CarouselImages', _t('Page.CarouselImages', 'Gallery Images')));
         $fields->addFieldToTab("Root.Images", new CheckBoxField('LargeTopCarousel', _t('Page.LARGETOPCAROUSEL', 'Use large top carousel'),'Gallery Images')); 
         $uploadField->setFolderName('CarouselImages');

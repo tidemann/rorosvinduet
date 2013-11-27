@@ -25,8 +25,10 @@
 	<div class="clearfix"></div>
 
   <% include Introduction %>    
+<div class="tinyContent">  
   <% include LeftRightBlocks %>
   $Content
+</div>
 	
  </div>
 <% include SideNav %>

@@ -1,16 +1,14 @@
 /*
   Rørosvinduet.no redesign
 
-red: #a02226; darkred: #820011;
+red: #a02226; darkred: #820012;
 blue: @blue;
 
 background beige: #f9f8f6;
 
-
-
 */
 
-@import "bootstrap.less";
+@import "../less/bootstrap.less";
 
 
 body {
@@ -20,7 +18,7 @@ body {
 	  
 }
 
-h1, h2, h3, h4, h5, h6, ul.nav li, .bigLink, .tabP, aside, form label, form button {
+h1, h2, h3, h4, h5, h6, ul.nav li, .bigLink, .tabP, aside, form label, form button, .tab-pane  {
 	  font-family: "Ropa Sans", Helvetica, Arial, sans-serif;
 	  text-transform: uppercase;
 }
@@ -93,7 +91,9 @@ blockquote {
 	  padding: 20px 28px;
 	  margin: 40px 0;
 }
-
+blockquote p{
+	font-size: 23px;
+}
 .contentImg {
 	  width: 100%;
 }
@@ -129,6 +129,8 @@ blockquote {
 
 
 .navWrap {
+      position: relative;
+      z-index: 2;
 	  height: 49px;
 	  
 }
@@ -180,6 +182,7 @@ ul.nav li a {
 
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
 	  background: @darkred;
+	  color: @white;
 }
 
 .navbar-default .navbar-toggle {
@@ -322,12 +325,15 @@ ul.nav li a.activeLi {
 	  
 }
 
-
-.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus,  .nav-tabs.nav-justified > li > a {
+.nav-tabs.nav-justified > .active > a, .nav-tabs.nav-justified > .active > a:hover, .nav-tabs.nav-justified > .active > a:focus {
 	  
 	  background: none;
 	  border: none;
 	  
+}
+.nav-tabs > li > a
+{
+	  border: none;
 }
 .nav-tabs > li.active > a:after {
 	  display: inline-block;
@@ -387,11 +393,18 @@ aside ul {
 	  border-left: 1px dashed DarkGrey;
 }
 
-aside ul li {
+aside ul li{
 	  padding: 0.5em 0;
+	  
+}
+aside ul li ul,{
+	display:none;
+}
+aside ul li.section ul, aside ul li.current ul {
+	display: block;
 }
 
-aside .activeAside {
+aside .current > a{
 	  color: black;
 }
 
@@ -401,6 +414,8 @@ aside ul li:first-child {
 }
 
 .content img {
+      border-radius: 6px;
+      max-width: 100%;
 	  padding: 0;
 	  margin: 10px 0 0;
 }
@@ -823,7 +838,7 @@ footer ul li a.mail {
 	  }
 	  form label {
 		    text-align: center;
-		    font-size: 1em;
+		    font-size: 1em; 
 		    margin: 0 0 10px 0;
 	  }
 	  form button {
@@ -871,3 +886,12 @@ footer ul li a.mail {
 }
 
 
+.tinyContent ul li {
+    background:url("../img/checkmark.png") no-repeat 0 50%;
+    padding-left: 30px;
+}
+
+.tinyContent ul {
+    list-style-type: none;
+    padding:0
+} 

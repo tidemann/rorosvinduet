@@ -7,8 +7,10 @@
 	<div class="contact">
 		<div class="clearfix contactInfo">
 		  <% include Introduction %>  
-		    <% include LeftRightBlocks %>
-		    $Content
+		  <div class="tinyContent">
+		    	<% include LeftRightBlocks %>
+		    	$Content
+			</div>
 		</div>
 		<% loop ContactGroups %>
 			<% include ContactGroup %>  

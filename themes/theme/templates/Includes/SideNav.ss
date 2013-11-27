@@ -5,21 +5,23 @@
       <li class="$LinkingMode"><a href="$Link">$MenuTitle.XML</a></li>    
     <% end_with %>
    	<% loop Menu(2) %>
-    		<li><a href="$Link">$MenuTitle.XML</a></li>
+    		<li class="$LinkingMode"><a href="$Link">$MenuTitle.XML</a>
         <% if NavChildren %>
           <ul>
             <% loop NavChildren %>
-			        <li class="$LinkingMode"><a href="$Link">$MenuTitle.XML</a></li>  
+			        <li class="$LinkingMode"><a href="$Link">$MenuTitle.XML</a>
                 <% if NavChildren %>
                   <ul>
                     <% loop NavChildren %>
 			                <li class="$LinkingMode"><a href="$Link">$MenuTitle.XML</a></li>            
                     <% end_loop %>            
                   </ul>
-                <% end_if  %>          
+                <% end_if  %> 
+                </li>           
             <% end_loop %>            
           </ul>
         <% end_if  %>
+        </li>
     <% end_loop %>
   </ul>
 </aside>
