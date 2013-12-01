@@ -3,11 +3,9 @@
 <div id="InlineCarousel_{$ID}" class="carousel slide tilbehorSlide" data-interval="false">
 
 	<div class="carousel-inner img-rounded">
-	<% loop CarouselImages %>
+	<% loop GalleryImages  %>
 		<div class="item <% if First %>active<% end_if %>">
-			
-			
-			<img src="$URL"  alt="$Title" />
+			$setHeight(300) 
 			<div class="container">
 				<div class="carousel-caption2">
 					 $Title

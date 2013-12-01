@@ -115,7 +115,7 @@ class Page extends SiteTree {
 
 
     public function SubPages() {
-        return $this->Children()->filter('ClassName', "SubPage") ;
+        return $this->Children()->filter('ClassName', "SubPage");
     }
 }
 

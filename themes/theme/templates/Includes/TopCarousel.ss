@@ -1,9 +1,9 @@
 <div id="myCarousel" class="carousel slide<% if LargeTopCarousel %> karrusell<% end_if %>">
 	<div class="carousel-inner">
-	<% loop CarouselImages %>
+	<% loop GalleryImages %>
 		<div class="item <% if First %>active<% end_if %>">
-			<img src="$URL"  alt="$Title" />
-			  <div class="container">
+			$setWidth(1280) 
+	    <div class="container">
 		    <div class="carousel-caption">
 		      <h1>$Title</h1>
 		    </div>
