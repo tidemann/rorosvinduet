@@ -10,9 +10,9 @@ $(document).ready(function() {
 	 minimum   : 500,
 	 maximum   : 855,
 	 minFont   : 11,
-	 maxFont   : 19,
+	 maxFont   : 16,
 	 fontRatio : 30,
-	 lineRatio : 1.7
+	 lineRatio : 1.4
 	});
 
 	$('#nav-wrapper').height($("#Nav").height());

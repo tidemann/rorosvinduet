@@ -5,10 +5,12 @@
       $Breadcrumbs
     </div>
   <% end_if %>     
-  
+
+  <% if MainImage %>
   <% with MainImage.SetWidth(825) %>
     <div class="col-md-12 nopad"><img src="$URL" alt="$Title" class="img-rounded"/><p></p></div>
   <% end_with %>
+  <% end_if %>
 
   <% include Introduction %>  
 
