@@ -521,7 +521,7 @@ aside ul li:first-child {
 }
 
 ul.checkmark li {
-    background:url("../img/checkmark.png") no-repeat 0 50%;
+    background: url("../img/checkmark.png") no-repeat 0 0.2em;
     padding-left: 30px;
 }
 
@@ -638,13 +638,21 @@ aside ul ul li:first-child {
 
 .tilbehorSlide .carousel-inner img {
 	  margin: 0 auto;
-	  height: 300px;
+	  
 	  max-width: none;
 	  min-width: 0;
 	  -webkit-box-shadow: 0px 0px 140px rgba(50, 50, 50, 0.50);
 	  -moz-box-shadow:    0px 0px 140px rgba(50, 50, 50, 0.50);
 	  box-shadow:         0px 0px 140px rgba(50, 50, 50, 0.50);
 }
+.tilbehorSlide .carousel-inner .image-wrapper {
+	height: 300px; 
+	width: 380px; 
+	display:table-cell; 
+	vertical-align: middle; 
+	text-align: center;
+}
+
 .carousel-control.left, .carousel-control.right {
 	  background: none;
 }
