@@ -15,7 +15,7 @@
   <% include Introduction %>  
 
   <!--div class="tilbehorSection row"></div-->
-    <div class="tinyContent">
+    <div class="typography">
     <% include LeftRightBlocks %>
     $Content
     </div>

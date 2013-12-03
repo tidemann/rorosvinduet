@@ -7,7 +7,7 @@
 	<div class="contact">
 		<div class="clearfix contactInfo">
 		  <% include Introduction %>  
-		  <div class="tinyContent">
+		  <div class="typography">
 		    	<% include LeftRightBlocks %>
 		    	$Content
 			</div>

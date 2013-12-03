@@ -25,7 +25,7 @@
 	<div class="clearfix"></div>
 
   <% include Introduction %>    
-<div class="tinyContent">  
+<div class="typography">  
   <% include LeftRightBlocks %>
   $Content
 </div>
