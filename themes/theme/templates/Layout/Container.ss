@@ -12,7 +12,9 @@
 			<a href="$Link">
 				<div class="innerRec">
 					<div class="center">
-						$TeaserImage.SetWidth(230)
+						<% with TeaserImage.SetWidth(230) %>
+							<img src="$URL" class="round" alt="$Title" />
+						<% end_with %>
 						<p class="bigLink">$Title</p>
 						<% if TeaserText %>
 							<p class="productText">$TeaserText</p>
