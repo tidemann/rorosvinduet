@@ -5,8 +5,8 @@
 	<div class="carousel-inner img-rounded">
 	<% loop GalleryImages  %>
 		<div class="item <% if First %>active<% end_if %>">
-			<div style="height: 300px; width: 380px; display:table-cell; vertical-align: middle; text-align: center;">
-			$SetRatioSize( 380, 300 )
+			<div class="image-wrapper">
+				$SetRatioSize( 380, 300 )
 			</div>
 			<div class="container">
 				<div class="carousel-caption2">
